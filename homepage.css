@@ -1,0 +1,102 @@
+:root {
+    --backgroundcolor: #7BD0EB;
+    --firstsectiontextcolor: #313DA9;
+    --quotesbackground: #EFEDEA;
+    --whatweoffercolor:#A6D5E4;
+    --activitiescolor: #AED5AF;
+    --ourteamcolor: #2488CA;
+    --whatotherssay: #41C6AE;
+    --makeappointment: #FFE7DD;
+}
+
+.section1{
+    position: absolute;
+    width: 1300px;
+    height: 691px;
+    background: url(images/bgcp.png);
+}
+
+.logo-container{
+    position: absolute;
+    width: 325px;
+    height: 253.3px;
+    left: -23px;
+    top: -7px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+  }
+li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    color: #313DA9;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+
+
+
+.Titulli{
+    position: absolute;
+width: 462px;
+height: 83.34px;
+left: 98px;
+top: 359.01px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 77px;
+
+color: #FFFFFF;
+}
+
+.info{
+    position: absolute;
+width: 574px;
+height: 263px;
+left: 708px;
+top: 270px;
+
+font-family: 'Glegoo';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 43px;
+
+color: #313DA9;
+
+text-shadow: 0px 2.12601px 2.12601px rgba(0, 0, 0, 0.25);
+}
+
+.Offer{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 410px;
+    height: 649px;
+    left: 54px;
+    top: 671px;
+
+    background: #A6D5E4;
+    box-shadow: -25px 25px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+
+
+
+
+
