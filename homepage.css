@@ -1,100 +1,366 @@
-:root {
-    --backgroundcolor: #7BD0EB;
-    --firstsectiontextcolor: #313DA9;
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;800&family=Inter:wght@400;900&display=swap');
+ 
+
+  
+/*-----------------------Root style------------------------*/
+
+:root{
+    --background: #fff;
     --quotesbackground: #EFEDEA;
-    --whatweoffercolor:#A6D5E4;
-    --activitiescolor: #AED5AF;
-    --ourteamcolor: #2488CA;
-    --whatotherssay: #41C6AE;
-    --makeappointment: #FFE7DD;
+    --whatweofferr:#A6D5E4;
+    --activities: #AED5AF;
+    --ourteamc: #2488CA;
+    --text: #313DA9;
+    --infotext:#205E22;
 }
 
-.section1{
-    position: absolute;
-    width: 1300px;
-    height: 691px;
-    background: url(images/bgcp.png);
-}
+/*-----------------------All style------------------------*/
 
-.logo-container{
-    position: absolute;
-    width: 325px;
-    height: 253.3px;
-    left: -23px;
-    top: -7px;
-
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
+*{
+    font-family:'Dosis', sans-serif;
+    margin:0;
     padding: 0;
-    overflow: hidden;
-    background-color: none;
-  }
-li {
-    float: right;
-  }
-
-  li a {
-    display: block;
-    color: #313DA9;
-    text-align: center;
-    padding: 16px;
+    outline: none;
+    border: none;
     text-decoration: none;
-  }
-
-
-
-
-.Titulli{
-    position: absolute;
-width: 462px;
-height: 83.34px;
-left: 98px;
-top: 359.01px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 64px;
-line-height: 77px;
-
-color: #FFFFFF;
 }
 
-.info{
-    position: absolute;
-width: 574px;
-height: 263px;
-left: 708px;
-top: 270px;
+/*-----------------------Html style------------------------*/
 
-font-family: 'Glegoo';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 43px;
-
-color: #313DA9;
-
-text-shadow: 0px 2.12601px 2.12601px rgba(0, 0, 0, 0.25);
+html{
+    font-size:62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding: 6rem;
 }
 
-.Offer{
-    box-sizing: border-box;
+/*-----------------------Header style------------------------*/
 
+.header{
+    padding-top: 2rem;
+    padding-bottom:2rem;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--whatweoffer);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0px;
+    z-index: 800;
+}
+
+
+.header .logo img{
+   padding-left: 20px;
+   width: 150px;
+    height: 120px;
+    
+}
+
+
+.header .navbar a{
+    font-size:2rem;
+    font-weight: 500;
+    margin-left: 2rem;
+    color:var(--text);
+    margin-right: 2rem;
+
+
+}
+.header .navbar a:hover{
+    color:var(--activities);
+    text-decoration-line: underline;
+
+}
+
+
+button img{
+    width:25px;
+}
+
+button{
+    
+    border:0;
+    border-radius: 50%;
+    width:60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.home .background{
     position: absolute;
-    width: 410px;
-    height: 649px;
-    left: 54px;
-    top: 671px;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    left: 0;
+}
 
+.background .content h1{
+    float:left;
+    margin-top:230px;
+    margin-left:100px;
+    color: var(--background);
+    font-size: 7rem;
+   
+}
+
+.background .content p{
+    position: absolute;
+    width: 574px;
+    height: 263px;
+    right: 20px;
+    top: 220px;
+    font-size: 24px;
+   
+}
+
+/*-----------------------Info style------------------------*/
+
+.box1{
+    float: left;
+    position: absolute;
+    left: 40px;
+    top: 450px;
+    
+}
+.box-content1{
+    align-items: center;
+    width: 350px;
+    height: 400px;
     background: #A6D5E4;
     box-shadow: -25px 25px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+
 }
 
+.tittle-info{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 24px;
+    color: var(--infotext);
+}
+
+ .imginfo img{
+    position: relative;
+    width: 308px;
+    height: 212px;
+    left: 20px;
+    right:20px;
+    top: 40px;
+}
+
+.btn{
+    border: 1px solid #000000;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left:120px;
+    bottom: 10px;
+    font-size: 20px;
+    background: #41C6AE;
+    border-radius: 43px;
+
+}
+
+.btn:hover{
+    color:var(--background);
+}
+
+.box2{
+    
+    position: relative;
+    left: 450px;
+    right: 440px;
+    top: 250px;
+    align-items: center;
+    
+}
+
+.box-content2{
+    width: 350px;
+    height: 400px;
+    background: var(--activities);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.box3{
+    float: right;
+    position: relative;
+    right: 40px;
+    top: -110px;
+    align-items: center;
+    
+}
+
+.box-content3{
+    width: 350px;
+    height: 400px;
+    background: var(--ourteamc);
+    box-shadow: 25px 25px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+/*-----------------------Qutoe style------------------------*/
+
+.quote{
+    align-items: center;
+    position: absolute;
+    top: 95rem;
+    left: 8rem;
+    width: 85%;
+    height: 35%;
+
+
+    background: #EFEDEA;
+    border: 5px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.quote p{
+    text-align: center;
+    font-size: 24px;
+    font-weight:450;
+    padding-top: 50px;
+}
+.buttond{
+    left: 50rem;
+    top:150px;
+}
+#button{
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    background: #181b1b;
+    border-radius: 70px;
+    color: #EFEDEA;
+    
+}
+
+#button:hover{
+    background:var(--infotext) ;
+}
+
+/*-----------------------Consulation style------------------------*/
+
+.consulation{
+    width:100%;
+    height:70%;
+    background-image: url(images/Contact\ us.png);
+    margin-top: 55rem;
+}
+
+.consulation h1{
+    position: absolute;
+    margin-left: 50px;
+    font-size:50px;
+    font-weight: bold;
+    margin-top: 90px;
+}
+
+.consulation p1{
+    width:60%;
+    position:absolute;
+    margin-left: 80px;
+    margin-top: 200px;
+    font-size: 20px;
+    color:rgb(222, 157, 73);
+    font-weight: 600;
+}
+
+.consulation p2{
+    width:60%;
+    position:absolute;
+    margin-left: 120px;
+    margin-top: 300px;
+    font-size: 20px;
+    color:black;
+    font-weight: 600;
+}
+.consulation .cnslbutton{
+    left: 40rem;
+    top:140rem;
+    
+}
+#cnslbutton{
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    
+    background: var(--ourteamc);
+    border-radius: 70px;
+    color: #EFEDEA;
+   
+}
+
+#cnslbutton:hover{
+    background: #000000;
+}
+
+/*-----------------------What Others Say style------------------------*/
+
+.others{
+    padding:40px 0;
+    background:#fff;
+    text-align: center;
+    box-shadow: #EFEDEA;
+}
+.others-say{
+    max-width:1200px;
+    margin:auto;
+    overflow:hidden;
+    padding: 0 20px;
+}
+
+
+.border{
+    width: 160px;
+    height: 5px;
+    margin:26px auto;
+    background-color: #507986;
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col{
+    flex:33,33%;
+    max-width:33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.other{
+    background: var(--whatweofferr);
+    padding: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.other img{
+    width: 100px;
+    height: 1oopx;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.stars{
+    color: #205E22;
+    margin-bottom: 20px;
+}
+
+/*-----------------------Footer style------------------------*/
 
 
 
