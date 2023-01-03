@@ -274,7 +274,7 @@ li, a {
 }
 
 .fotoja {
-    background: url(home.svg);
+    background: url(images/home.svg);
     background-size: 90px;
     background-repeat: repeat-x;
     background-origin: border-box;
