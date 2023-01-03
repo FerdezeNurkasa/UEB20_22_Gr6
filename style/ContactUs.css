@@ -1,0 +1,18 @@
+#fotojabackground{
+    background-image: url(images/rehabilitationcenter.png);
+}
+
+h2.fotoja2{
+    background-image: url(images/pwd.png);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:beige;
+}
+
+.center{
+    text-align: center;
+}
