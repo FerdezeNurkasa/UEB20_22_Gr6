@@ -4,46 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "style/stylee.css">
+    <link rel = "stylesheet" href = "stylee.css">
     <title>Activities</title>
 </head>
 <body>
+    <div class="bg-image" id="bg-image"></div>
     <div class="container">
-    <div class="row">
-    <div class="banner">
-    <img src="https://i.pinimg.com/564x/7d/67/e6/7d67e6f7f80736543c241bb5bb713ef9.jpg"> 
-    <h1 class="heading"> >>Don't stay home!</h1>
+        <h2>----Activities made by us----</h2>
     </div>
-    </div>
-    </div>
-     <nav>
-           <h2>----Activities made by us----</h2>
         <span class="divider"></span>
-        <ul>
-            <li><a href="#">Activities for all personalities</a></li>
-            <li><a href="#">Gardening: no-stress therapy</a></li>
-            <li><a href="#">Swimming pools: physical and neurological therapy</a></li>
-            <li><a href="#">Leading an active life</a></li>
-            <li><a href="#">Wii Therapy: enhance your mobility</a></li>
-            <li><a href="#">Music Therapy: arousing your emotions</a></li>
-            
-        </ul>
-    </nav>
+        <div class="navbar active">
+            <ul>
+        <div class="container2">
+           <div class="color-container2">
+               <li><a href="#">Activities for all personalities</a></li>
+            </div>
+           <div class="color-container2">
+               <li><a href="#">Gardening: no-stress therapy</a></li>
+            </div>
+           <div class="color-container2">
+               <li><a href="#">Swimming pools: physical and neurological therapy</a></li>
+            </div>
+           <div class="color-container2">
+               <li><a href="#">Leading an active life</a></li>
+            </div>
+           <div class="color-container2"> 
+               <li><a href="#">Wii Therapy: enhance your mobility</a></li>
+            </div>
+           <div class="color-container2"> 
+               <li><a href="#">Music Therapy: arousing your emotions</a></li>
+            </div> 
+        </div>
+    </ul>
+ 
+    </div>
+       <button class="popup-btn">Choose one!</button>
     <body1>
-    <div class="container1">
+    <div class="container3">
+        <div class="popup-container">
         <h2>Any comment about activities of our team?</h2>
         <textarea id="textarea" class="textarea" 
         placeholder="Write your comment here..." 
         maxlength="50"></textarea>
+    <button class="popup-btn">Finish</button>
         <div class="counter-container">
             <p>
                 Total characters:
-                <span class="total-counter" id="total-counter">30</span>
+                <span class="total-counter" id="total-counter"></span>
             </p>
             <p>
                 Remaining:
-                <span class="remaining-counter" id="remaining-counter">20</span>
+                <span class="remaining-counter" id="remaining-counter"></span>
             </p>
+        </div>
         </div>
     </div>
     <script src="activities.js"></script>
