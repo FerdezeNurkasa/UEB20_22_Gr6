@@ -45,6 +45,10 @@ h2{
     display:inline-block;
     justify-content: right;
     border-radius: 50%; 
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%)
  
    
 }
@@ -119,7 +123,7 @@ body1{
     box-shadow: 0 4px 8px rgba(0,0,0,.3);
     text-align:center;
 }
-.popup-btn{
+.popup1-btn{
     width: 500px;
     height: 50px;
     color:#5699e0;
@@ -127,4 +131,31 @@ body1{
     margin-left: 550px;
 
 }
+img{
+    width:18cm;
+    height: 10cm;
+    display:flex;
+   box-shadow: 0 4px 8px rgba(0,0,0,.3);
+   border-radius: 10px;
+   padding: 0 10px 0 0;
+   margin-top: 50px;
+   float: left;
+   
 
+}
+
+h1{
+    text-align: center;
+    font-size: 1.5cm;
+    color:rgb(119, 193, 168);
+}
+.container4{
+    margin: 50px auto;
+    width: 50%;
+    padding: 8px;
+    font-size: 0.5cm;
+}
+.text{
+    text-align: justify;
+    font-family: cursive;
+}
