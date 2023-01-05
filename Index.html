@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emri i klinikes</title>
+    <link rel="stylesheet" href="style/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+   
+ <!-----------------------Header section------------------------>
+<section class="header">
+    <a href="#" class="logo"><img src="images/Logo.png"></a>
+    <nav class="navbar">
+        <a href="#" onclick="LoadPages(1)">HOME</a> 
+        <a href="#"  onclick="LoadPages(2)">ABOUT US</a>
+        <a href="#"  onclick="LoadPages(3)">ACTIVITIES</a>
+        <a href="#"  onclick="LoadPages(4)">OUR TEAM</a>
+        <a href="#"  onclick="LoadPages(5)">CONTACT US</a>
+        <button type="submit"><img src="images/search.png"></button>
+    </nav>
+</section>
+<!-----------------------Body ------------------------>
+<div id="LoadBody" class="w-100" >
+
+</div>
+<!-----------------------Footer section------------------------>
+
+<footer>
+
+
+    <div class="footer-content">
+        <h3>Hope Clinic</h3>
+        <ul class="socials">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright &copy;2023 HopeClinik.</p>
+    </div>
+
+</footer>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    function LoadPages(page){
+        if(page==1){
+            document.getElementById("LoadBody").innerHTML='<object type="text/html" data="HomePage.html" ></object>';
+        }else if(page==2){
+            $("#LoadBody").load("ContactUs.html");
+            // document.getElementById("LoadBody").innerHTML='<object type="text/html" data="ContactUs.html" ></object>';
+        }
+    }
+</script>

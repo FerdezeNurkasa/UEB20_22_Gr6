@@ -1,0 +1,161 @@
+
+body{
+    background-image: url(
+    "https://i.pinimg.com/originals/63/65/fb/6365fb5823ca5602292b3d79a9202f11.jpg")
+}
+.bg-image{
+    width: 100%;
+    height: 100vh;
+    background-image: url(
+"https://media.istockphoto.com/id/1244524439/photo/welfare-support-concept-caregiver-carer.jpg?s=612x612&w=0&k=20&c=8yjfo-zzawqv391umwAwq5InOMcHCqga1upprzy69fQ=");
+    background-position: center;
+    background-attachment: fixed;
+}
+.banner{
+    position:relative;
+    width: 100%;
+    margin:0 auto;
+      
+    }
+
+.container{
+    box-sizing: border-box;
+    background-color: #d4e3f3;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.navbar{
+    display:flex;
+    justify-content: center;
+    margin: 5px;
+   
+}
+
+h2{
+    text-align:stars;
+    font-family: cursive;
+    font-size: 1cm;
+    padding-top: 5%;
+    margin-left: 20%;
+}
+.divider{
+    width: 44cm;
+    height: 5px;
+    background-color: #5699e0;
+    display:inline-block;
+    justify-content: right;
+    border-radius: 50%; 
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%)
+ 
+   
+}
+nav ul li{
+    display:block;
+}
+nav ul li a{
+    font-size: 20px;
+}
+.container3{
+    background-color: #d4e3f3;
+    width: 600px;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3)
+}
+body1{
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  font-family: cursive;
+}
+.textarea{
+    resize:none;
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 2px darkgray;
+}
+.counter-container{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+.counter-conatiner p{
+    font-size: 18px;
+    color: gray;
+}
+.total-counter{
+    color: slateblue;
+}
+.remaining-counter{
+    color: orangered;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+}
+
+.color-container2{
+    background-color: #d4e3f3;
+    width: 230px;
+    height: 200px;
+    color-scheme: white;
+    margin: 5px;
+    list-style-type: none;
+    display: flex;
+    font-size: 25px;
+    font-family: cursive;
+    margin-top: 50px;
+    box-sizing: border-box;
+    border: solid 2px darkgray;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    text-align:center;
+}
+.popup1-btn{
+    width: 500px;
+    height: 50px;
+    color:#5699e0;
+    background-color: #d4e3f3;
+    margin-left: 550px;
+
+}
+img{
+    width:18cm;
+    height: 10cm;
+    display:flex;
+   box-shadow: 0 4px 8px rgba(0,0,0,.3);
+   border-radius: 10px;
+   padding: 0 10px 0 0;
+   margin-top: 50px;
+   float: left;
+   
+
+}
+
+h1{
+    text-align: center;
+    font-size: 1.5cm;
+    color:rgb(119, 193, 168);
+}
+.container4{
+    margin: 50px auto;
+    width: 50%;
+    padding: 8px;
+    font-size: 0.5cm;
+}
+.text{
+    text-align: justify;
+    font-family: cursive;
+}
