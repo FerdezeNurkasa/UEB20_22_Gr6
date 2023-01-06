@@ -3,6 +3,62 @@
 <head>
     <title>Meet our team</title>
     <link href="ourteam.css" rel="stylesheet">
+	<script type = "text/javascript">
+        function validate() {
+        var text;
+
+        for(let i = 0; i < document.myForm.length; i++){
+           if(document.myForm[i].value==""){
+               text = `${document.myForm[i].name} cannot be empty`;              
+               document.getElementById("demo").innerHTML = text;
+              document.myForm[i].focus() ;
+              return false;
+            }
+         }
+         //   if( document.myForm.name.value == "" ) {        
+         //     text = "Name cannot be empty";
+         //      document.getElementById("demo").innerHTML = text;
+         //      document.myForm.name.focus() ;
+         //      return false;
+         //   }
+         //   if( document.myForm.email.value == "" ) {
+         //     text = "E-mail cannot be empty";
+         //      document.getElementById("demo").innerHTML = text;
+         //      document.myForm.email.focus() ;
+         //      return false;
+         //   }
+      var emailID = document.myForm.email.value;
+      atposn = emailID.indexOf("@");
+      dotposn = emailID.lastIndexOf(".");
+      if (atposn < 1 || ( dotposn - atposn < 2 ) || emailID[emailID.length -1] == '.') {
+      text = "Please enter valid email ID";
+      document.getElementById("demo").innerHTML = text;
+      document.myForm.email.focus() ;
+      return false;
+    }
+
+
+   //  document.myForm.phone.value == "" ||
+           if(  isNaN( document.myForm.phone.value ) ||
+              document.myForm.phone.value.length != 10 ) {
+              text = "Please enter a valid 10-digit phone number";
+              document.getElementById("demo").innerHTML = text;
+              document.myForm.phone.focus() ;
+              return false;
+           }
+           if( document.myForm.subject.value == "0" ) {
+              text = "Please provide your area of expertise";
+              document.getElementById("demo").innerHTML = text;
+              return false;
+           }
+           alert("You are registered successfully!");
+           return( true );
+        }
+
+        function checkEmail(email){
+
+        }
+     </script>
 	
 </head>
 <body>
@@ -211,6 +267,41 @@
 	</div>
   </div>
 
+
+<div class="User">
+  <form action = "" name = "myForm" onsubmit = "return(validate());">
+	<h1 id="titulli">USER REGISTRATION</h1>
+	<table id="tabela" cellspacing = "3" cellpadding = "3" border = "3">
+	   <tr>
+		  <td id="teName">Name</td>
+		  <td><input type = "text" name = "name" /></td>
+	   </tr>
+	   <tr>
+		  <td id = "teEmail">E-mail</td>
+		  <td><input type = "text" name = "email" /></td>
+	   </tr>
+	   <tr>
+		  <td id = "teNumber">Phone Number</td>
+		  <td><input type = "text" name = "phone" /></td>
+	   </tr>
+	   <tr>
+		  <td id = "teSubject">Subject</td>
+		  <td>
+			 <select name = "subject">
+				<option value = "0" selected>Select</option>
+				<option value = "1">HTML</option>
+				<option value = "2">JavaScript</option>
+				<option value = "3">CSS</option>
+				<option value = "4">JSP</option>
+			 </select>
+		  </td>
+	   </tr>
+	</table>
+	<p id="demo" style="color:red; text-align:center"></p>
+<div class="submiti"><input type = "submit" value = "Submit" /></div>
+ </form>
+
+</div>
 
 </body>
 </html>
