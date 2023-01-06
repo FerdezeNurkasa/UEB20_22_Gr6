@@ -8,18 +8,15 @@ h1.background{
     width: 100%;
 }
 
-.poshtfigtext{
-    margin-top: 0px;
-    
-}
 
 .hapesirebox{
     margin-left: 50px;
 
 }
 
+
 .hapesiretekst{
-margin-bottom: 80px;
+    margin-bottom: 80px;
 
 }
 
@@ -38,7 +35,7 @@ margin-bottom: 80px;
     background-position: center center;
     position: relative;
     overflow-y: hidden;
-    opacity:  0.65;
+    opacity:  0.7;
     background-size: cover;
     background-repeat: no-repeat; 
     width: 100vw; 
@@ -47,15 +44,27 @@ margin-bottom: 80px;
   
 
 
-a.hapesirebuton{
-    margin: 20px;
+a.homebuton{
+    margin: auto;
+    margin-top: 0.1;
+    display: grid;
+    width: 20px;
+    height: 10px;
+}
+
+.nextbutton{
+    margin-top: 50px;
     padding: 15px;
     border: 10px;
+    display: flex;
+    display: grid;
+    background-color: lightblue;
+    background-image: url('images/different disabilities.png');
 }
 
 h2.offer{
     text-align: center;
-    text-transform: uppercase;
+    background-color: lightskyblue;
 }
 
 
@@ -69,7 +78,7 @@ h1.tekstinefig{
     white-space: nowrap;
     color: black;
     position: absolute;
-    opacity: 0.65;
+    opacity: 0.7;
 }
 
 .marginposhte{
@@ -87,4 +96,34 @@ h1.tekstinefig{
     width: 250px;
     height: 250px;
     border-radius: 180px;
+}
+
+.textinhead{
+    text-align: center;
+    opacity: 0.7;
+}
+
+.marginbox{
+    margin-top: 5px;
+    
+}
+
+#marginright.marginbox{
+    text-align: center;
+    margin-right: 20%;
+}
+.border{
+    width: 600px;
+    height: 690px;
+    margin: auto;
+    margin-top: 50px;
+    border: 10px;
+    box-sizing: border-box;
+    outline-style:outset;
+    border-color: lightblue;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    text-align: justify;
+    border-radius: 10%;
 }
