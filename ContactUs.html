@@ -1,11 +1,15 @@
- 
-    <section class="background">
-        <div style="background: url('images/rehabilitationcenter.png'); width: 100%; height: 80%; 
-        background-repeat: no-repeat; background-size: cover;">
-            <h1>Do you want to receive the services that our clinic offers?</h1>
-        </div>
-    </section>
-<div class="poshtfigtext">
+ <html>
+    <head>
+        <link rel="stylesheet" href="style/ContactUs.css">
+    </head>
+    <body>
+        <h1>Do you want to receive the services that our clinic offers?</h1>
+        <section class="background">
+            <div style="background: url('images/rehabilitationcenter.png'); background-size: cover;
+             background-repeat: no-repeat; width: 100%; height: 100%;">
+            </div>
+            </section>
+    <div class="poshtfigtext">
     <div class="hapesiretekst">
         <p> If the answer is <i> Yes </i> then you should scroll down to get the first page of registration and click the <i>Next </i> button for final procedures </p>
         <p> If <i> No </i> you can see other infos in this page because this is for registration! The button down that says 
@@ -16,6 +20,7 @@
     
     <h2> Registration should be done here! </h2>
     <h4> The requested information should be filled with information about you, please answer them correctly! </h4>
+    <img class="portrait" src="images/portrait.png" alt="A portrait of an person with disabilities">
         <div class="row">
                 <div class="col mb-3">
                     <label for="fname" > Name: </label>
@@ -46,15 +51,14 @@
                 <input type="text" id="address" name="address" >
             </div>
         </div>
- 
+    </div>
     <label for="member" > Are you a member of any other organizations? </label>
     <form>
         <input type="radio" id="yes" name="member" value="Yes">
-        <label for="yes"> Yes </label><br>
+        <label for="yes"> Yes </label>
         <input type="radio" id="no" name="member" value="No">
-        <label for="no"> No </label><br>
-    </form>
-    
+        <label for="no"> No </label>
+    </form>    
     <label for="member" > Birth Date: </label>
     <form>
         <label for="month"> Month </label>
@@ -105,7 +109,7 @@
             <option value="29"> 29 </option>
             <option value="30"> 30 </option>
             <option value="31"> 31 </option>
-            </select>
+        </select>
         <label for="viti"> Viti </label>
         <select id="muaji" name="muaji">
             <option value="mbi '50"> 1950 - 1959 </option>
@@ -118,11 +122,12 @@
             <option value="mbi 2020"> 2020+ </option>
         </select>
     </form><br>  
- <a class="hapesirebuton" href="CUpage2.html" target="_blank"><button>  Next  </button></a>    
- 
+    <a class="hapesirebuton" href="CUpage2.html" target="_blank"><button>  Next  </button></a>    
+    
 </div> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
-    <script src="myScript.js"></script>  
+<script src="myScript.js"></script>  
 
-
+</body>
+</html>
  
