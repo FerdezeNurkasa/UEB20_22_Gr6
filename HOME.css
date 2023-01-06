@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     text-decoration: none;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 header{
@@ -87,7 +87,7 @@ header{
     cursor: pointer;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:760px) {
     .menu-toggle-btn{
         display: block !important;
     }
@@ -206,7 +206,25 @@ header{
     }
 }
 
+@media only screen and (max-width: 760px) {
 
+    .hero{
+        width: 100%;
+    }
+   
+    .content h1{
+        
+        margin-left:2rem;
+        font-size: 15px;
+        letter-spacing: 5px;
+        
+    }
+    .content p{
+        width: 140px;
+        font-size: 9px;
+        margin-right: 10px;
+    }
+}
 
 .Info-section{
     position: relative;
@@ -252,6 +270,7 @@ header{
     box-shadow: 0 0 0 26em rgb(211, 234, 220);
 }
 ul li{
+    padding-right: 30px;
     list-style: none;
     text-size-adjust: 20px;
 }
@@ -268,6 +287,39 @@ button{
     transition: .3s linear;
     border-radius: 30px;
     background-color: #fff;
+}
+
+@media only screen and (max-width: 760px) {
+
+    .Info-section{
+        width: 100%;
+        height:20rem;
+    }
+    .Info-card{
+        margin:5px 3px;
+        text-align: center;
+        height: 19rem;
+    
+    }
+    
+    .Info-card-header{
+        display: block;
+        padding: 6px 15px;
+        font-size: 8px;
+    }
+
+    .Info-card:hover .Info-card-header{
+        box-shadow: 0 0 0 19rem rgb(211, 234, 220);
+    }
+
+    .Info-card img{
+        width: 7rem;
+    }
+
+    ul li{
+        font-size: 10px;
+    }
+   
 }
 
 #container{
@@ -289,7 +341,7 @@ button{
 	padding:10px;
 	margin:30px auto;
 	text-align: center;
-  height:70px;
+    height:70px;
 }
 #buttonContainer{
 	width: 100%;
@@ -330,6 +382,7 @@ button{
 	#quoteButton,#addNew{
 		display: block;
 	}
+    
 }
 .consulation{
     position: relative;
@@ -380,6 +433,22 @@ button{
 
 #cnslbutton:hover{
     background: #c7a6a6;
+}
+
+@media screen and(max-width:760px){
+
+    .consulation h1{
+        box-sizing: border-box;
+        width: 20px;
+        font-size: 10px;
+    }
+
+    .consulation p1{
+        margin-left: 20px;
+        margin-right: 10rem;
+        font-size: 10px;
+    }
+
 }
 
 .others{
@@ -441,5 +510,10 @@ button{
 
 footer{
     background-color: #f3eee7;
-    
+    cursor: pointer;
+}
+
+.phone{
+    color: black;
+    letter-spacing: 2px;
 }
