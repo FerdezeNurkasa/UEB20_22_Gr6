@@ -87,6 +87,39 @@ header{
     cursor: pointer;
 }
 
+
+
+.search-box{
+    position: relative;
+    top: 5px;
+    left: 2rem;
+    right: 2rem;
+    background:none;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+.search-box:hover > .search-txt{
+    width: 4rem;
+    padding: 0 6px;
+    top: 50px;
+}
+.search-box:hover > .search-btn{
+   color: white;
+     }
+
+.search-txt{
+ border: none;
+ background: none;
+ outline: none;
+ float: left;
+ padding: 0;
+ color: rgb(66, 61, 139);
+ font-size: 16px;   
+ width: 0px;
+}
+ 
 @media screen and (max-width:760px) {
     .menu-toggle-btn{
         display: block !important;
@@ -127,38 +160,6 @@ header{
 
 }
 
-.search-box{
-    position: relative;
-    top: 5px;
-    left: 2rem;
-    right: 2rem;
-    background:none;
-    height: 40px;
-    border-radius: 40px;
-    padding: 10px;
-
-}
-.search-box:hover > .search-txt{
-    width: 4rem;
-    padding: 0 6px;
-    top: 50px;
-}
-.search-box:hover > .search-btn{
-   color: white;
-     }
-
-.search-txt{
- border: none;
- background: none;
- outline: none;
- float: left;
- padding: 0;
- color: rgb(66, 61, 139);
- font-size: 16px;   
- width: 0px;
-}
-  
-
 .hero{
     position: relative;
     width: 100%;
@@ -178,7 +179,7 @@ header{
     margin-top: 11rem;
     margin-left:8rem;
     float: left;
-    color: white;
+    color: #92ef84;
     font-size: 30px;
     letter-spacing: 12px;
     font-weight: bold ;
@@ -260,6 +261,8 @@ header{
     transition: .4s linear;
 }
 
+
+
 .Info-card img{
     width: 15rem;
     padding-top: 30px;
@@ -280,14 +283,23 @@ button{
     display: inline-block;
     margin-bottom: 10px;
     margin-top: 25px;
-    color:#070707;
+    color:#698cc7;
     padding: 5px 10px;
     border: 2px solid #698cc7;
     font-weight: 500;
     transition: .3s linear;
     border-radius: 30px;
     background-color: #fff;
+    transition: 0.5s;
 }
+
+button:hover{
+   background-color: #698cc7;
+   color: #fff;
+   transform: scale(1.15);
+    
+}
+
 
 @media only screen and (max-width: 760px) {
 
@@ -435,21 +447,6 @@ button{
     background: #c7a6a6;
 }
 
-@media screen and(max-width:760px){
-
-    .consulation h1{
-        box-sizing: border-box;
-        width: 20px;
-        font-size: 10px;
-    }
-
-    .consulation p1{
-        margin-left: 20px;
-        margin-right: 10rem;
-        font-size: 10px;
-    }
-
-}
 
 .others{
     padding:40px 0;
@@ -478,13 +475,17 @@ button{
     justify-content: center;
 }
 
+
 .col{
     flex:33,33%;
     max-width:33.33%;
     box-sizing: border-box;
     padding: 15px;
+    transition: 1s;
 }
-
+.col:hover{
+    transform: scale(1.15);
+}
 .other{
     background: #d4e3f3;
     padding: 30px;
@@ -517,3 +518,4 @@ footer{
     color: black;
     letter-spacing: 2px;
 }
+
