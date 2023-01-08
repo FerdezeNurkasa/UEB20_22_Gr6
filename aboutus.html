@@ -11,8 +11,8 @@
                 document.querySelector('.change').src=something;
             }
         </script>
-        
     </head>
+
     <body>
 
         <!--Time and greeting part-->
@@ -72,6 +72,73 @@
         <!--Home photos-->
         <div class="fotoja"></div>
 
+        <!--History of our clinic-->
+        <div class="about-section">
+            <div class="inner-container">
+                <h1>About us</h1>
+                <p class="text">
+                    "Launched in 2011, unique strategy has established it as the source of inspiration and influence throughout society. Our curatorial expertise and award-winning approach to storytelling is unparalleled. We work with exceptional talent and well-known and developing doctors, psychologists, speech therapists. In the following years, we have worked on a wide range of unique projects with some of the best Albanian psychologists. We strive to keep our work unique and clever." 
+                <br>
+                "Feel free to contact us anytime"
+                </p>
+            </div>
+        </div>
+
+        <!--Founders-->
+        <div class="image-container_a">
+    <div class="image_a" onmouseover="fetch_info(0)">
+    <img src="qika1.jpg" alt="foto">
+</div>
+
+<div class="image_a" onmouseover="fetch_info(1)">
+    <img src="djali1.jpg" alt="foto">
+</div>
+
+<div class="image_a" onmouseover="fetch_info(2)">
+    <img src="qika1.jpg" alt="foto">
+</div>
+
+<div class="image_a" onmouseover="fetch_info(3)">
+    <img src="djali1.jpg" alt="foto">
+</div>
+
+<div class="image_a" onmouseover="fetch_info(4)">
+    <img src="djali1.jpg" alt="foto">
+</div>
+
+<div class="image_a" onmouseover="fetch_info(5)">
+    <img src="qika1.jpg" alt="foto">
+</div>
+</div>
+<div class="info-container_a">
+    <img class="profile_a" id="profile_a" src="djali1.jpg">
+    <div class="info_a">
+        <h1 class="name_a" id="name_a">John Smith</h1>
+        <h3 class="status_a" id="status_a">Founder</h3>
+        <p class="about_a" id="about_a">Presheve</p>
+    </div>
+</div>
+<script>
+    function fetch_info(i){
+            let profiles_a=["qika1.jpg","djali1.jpg","qika1.jpg","djali1.jpg","djali1.jpg","qika1.jpg"];
+            let name_a=['Isabela Kaling','Mason Wyatt','Emma Roberts','Greyson Parker','Nolan Hudson','Sasha Pieterse'];
+            let status_a=["Founder ","Founder ","Founder ","Founder ","Founder ","Founder "];
+            let about_a=["Prishtin&euml;/Kosov&euml;","Gjilan/Kosov&euml;","Prishtin&euml;/Kosov&euml;","Gjakov&euml;/Kosov&euml;","Preshev&euml;","Vushtrri/Kosov&euml;"];
+            
+            document.getElementById("profile_a").src=profiles_a[i];
+            document.getElementById("name_a").innerHTML=name_a[i];
+            document.getElementById("status_a").innerHTML=status_a[i];
+            document.getElementById("about_a").innerHTML=about_a[i];
+        }
+</script>
    
+<!--Benefits-->
+<section class="benefits-section">
+    <div class="benefits-div">
+        <table class="benefits-table">
+            
+        </table>
+    </div>
+</section>
     </body>
 </html>
