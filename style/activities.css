@@ -1,15 +1,20 @@
-
 body{
     background-image: url(
-    "https://i.pinimg.com/originals/63/65/fb/6365fb5823ca5602292b3d79a9202f11.jpg")
+    "https://i.pinimg.com/originals/63/65/fb/6365fb5823ca5602292b3d79a9202f11.jpg");
+    background-repeat:no-repeat;
+    background-position-x: center;
+
 }
+
 .bg-image{
-    width: 100%;
-    height: 100vh;
+    width: 50cm;
+    height: 30cm;
     background-image: url(
 "https://media.istockphoto.com/id/1244524439/photo/welfare-support-concept-caregiver-carer.jpg?s=612x612&w=0&k=20&c=8yjfo-zzawqv391umwAwq5InOMcHCqga1upprzy69fQ=");
     background-position: center;
     background-attachment: fixed;
+    background-repeat:no-repeat;
+
 }
 .banner{
     position:relative;
@@ -18,12 +23,13 @@ body{
       
     }
 
-.container{
+.container2{
     box-sizing: border-box;
-    background-color: #d4e3f3;
     justify-content: center;
     padding-bottom: 5px;
+    
 }
+
 .navbar{
     display:flex;
     justify-content: center;
@@ -34,6 +40,7 @@ body{
 h2{
     text-align:stars;
     font-family: cursive;
+    margin-top: 50px;
     font-size: 1cm;
     padding-top: 5%;
     margin-left: 20%;
@@ -58,22 +65,15 @@ nav ul li{
 nav ul li a{
     font-size: 20px;
 }
-.container3{
-    background-color: #d4e3f3;
+.popup-container{
+    /*background-color: #d4e3f3;*/
     width: 600px;
     padding: 20px;
     margin: 5px;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,.3)
 }
-body1{
-  margin: 0px;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  align-items: center;
-  font-family: cursive;
-}
+
 .textarea{
     resize:none;
     width: 100%;
@@ -104,6 +104,7 @@ body1{
 .container2{
     display: flex;
     justify-content: center;
+    
 }
 
 .color-container2{
@@ -111,12 +112,12 @@ body1{
     width: 230px;
     height: 200px;
     color-scheme: white;
-    margin: 5px;
+    margin: 5px 15px;
     list-style-type: none;
     display: flex;
     font-size: 25px;
     font-family: cursive;
-    margin-top: 50px;
+    margin-top: 100px;
     box-sizing: border-box;
     border: solid 2px darkgray;
     border-radius: 20px;
@@ -140,14 +141,26 @@ img{
    padding: 0 10px 0 0;
    margin-top: 50px;
    float: left;
-   
+   justify-content: center;
 
+}
+h4{
+    font-size: 1.5cm;
+    color: #84add9;
+    margin-top: 10px;
+}
+h3{
+    font-size: 1cm;
+    margin-top: 10px;
+    text-align: center;
 }
 
 h1{
     text-align: center;
     font-size: 1.5cm;
     color:rgb(119, 193, 168);
+    justify-content: center;
+    
 }
 .container4{
     margin: 50px auto;
@@ -155,7 +168,216 @@ h1{
     padding: 8px;
     font-size: 0.5cm;
 }
-.text{
-    text-align: justify;
-    font-family: cursive;
+
+.btn{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
 }
+
+.btn .play{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #5699e0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 25px #f42e7966;
+    transition: 0.5s;
+}
+
+.btn.active .play{
+    box-shadow: 0 0 0 150vh #d4e3f3;
+}
+
+.btn .play::before{
+    content: '';
+    position: absolute;
+    border: 25px solid #fff ;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 0px solid transparent;
+    transform: translateX(5px);
+    justify-content: center;
+}
+
+.btn h3{
+    font-weight: 500;
+    font-size: 1em;
+    color: #d4e3f3;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+}
+
+.clip{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    transition: 0.5s;
+
+}
+.clip.active{
+    transition-delay: 0.5s;
+    transform: translate(-50% , -50%) scale(1);
+
+}
+.clip video{
+max-width: 900px;
+outline: none;
+border: 10px solid #fff;
+box-shadow: 0 15px 35px rgba(0,0,0,.3);
+}
+
+.clip .close{
+position: absolute;
+top: 30px;
+right: 30px;
+cursor: pointer;
+font-weight: 500;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #fff;
+}
+/*make it responsive*/
+@media (max-width: 991px)
+{
+    .clip video
+    {
+        max-width: 90%;
+    }
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  margin-top: 50px;
+  justify-content: center;
+  height: 13cm;
+margin-left: 450px;
+}
+.text{
+    justify-content: center;
+    
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  justify-content: center;
+}
+
+/* Position the "next button" to the right */
+.next {
+   right: 0; 
+   border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+ 
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #d4e3f3;
+  font-size: 1cm;
+  padding: 8px 12px;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.slideshow-container{
+    justify-content: center;
+
+}
+.container2.slideshow-container{
+    margin: 100px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer{
+    background-color: #f3eee7;
+    cursor: pointer;
+}
+
+.phone{
+    color: black;
+    letter-spacing: 2px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+
+
+
+
+
