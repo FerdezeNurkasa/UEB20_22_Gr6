@@ -26,7 +26,7 @@ h1.background{
 }
 
 .background{
-    text-align: center;
+    text-align: top;
     padding: 0;
     margin: 0 auto;
     padding: 0;
@@ -171,6 +171,7 @@ h1.tekstinefig{
 /* Hide the images by default */
 .mySlides {
     display: none;
+    margin-bottom: 30%;
 }
 
 /* Position the "next button" to the right */
@@ -275,3 +276,44 @@ h1.tekstinefig{
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+  .ratingtext{
+    text-align: center;
+    background-color: lightskyblue;
+  }
+
+  #rating {
+    unicode-bidi: bidi-override;
+
+}
+
+#rating input {
+    display: none;
+}
+
+#rating label {
+    color: #ddd; 
+}
+
+#rating:hover label {
+    color: #ffc107; 
+}
+
+#rating label:hover ~ label {
+    color: #ddd;
+}
+
+.stilitabeles{
+    box-sizing: border-box;
+    padding: 5px;
+    
+}
+ 
+table, th, td {
+    border: 1px solid white;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      background-color: lightskyblue;
+    }
