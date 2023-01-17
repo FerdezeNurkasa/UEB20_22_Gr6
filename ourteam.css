@@ -50,9 +50,10 @@ header{
 .navigation-menu i{
     margin-left: 60px;
     font-size: 16px;
+    color:#92ef84;
 }
 
-.home{
+/* .home{
     color:#92ef84;
 
 }
@@ -71,6 +72,7 @@ header{
     color:#92ef84;
 
 }
+*/
 
 .menu-toggle-btn{
     float: right;
@@ -80,11 +82,12 @@ header{
     font-size: 26px;
     display: none !important;
     cursor: pointer;
+    
 }
 
-@media screen and (max-width:760px) {
+@media screen and (max-width:880px) {
     .menu-toggle-btn{
-        display: block !important;
+        display:block !important;
     }
 
     .navigation-menu{
@@ -97,6 +100,7 @@ header{
         display: none;
         padding: 20px 40px;
         box-sizing: border-box;
+        z-index: 1000;
     }
 
     .navigation-menu::before{
@@ -153,22 +157,22 @@ header{
  width: 0px;
 }
   
-  /* Change the background color on mouse-over */
+  /* Change the background color on mouse-over
   .header a:hover {
     background-color: lightgreen;
     color: black;
   }
   
   /* Style the active/current link*/
-  .header a.active {
+  /* .header a.active {
     background-color: dodgerblue;
     color: white;
-  }
+  } */
   
   /* Float the link section to the right */
-  .header-right {
+  /* .header-right {
     float: right;
-  }
+  } */ 
   
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
   @media screen and (max-width: 500px) {
@@ -191,49 +195,48 @@ header{
 	
 }
   
-  .text-center1{
+.text-center1{
 	color:white;
 	background-color: rgb(100, 198, 231);
 	border-radius:10px;
 	font-family: 'Times New Roman', Times, serif;
 }
   
-  .doctor{
+.doctor{
 	color:black;
 	font-size:20px;
-	font-family: 'Times New Roman', Times, serif;
-  
+	font-family: 'Times New Roman', Times, serif;  
 }
   
-  .team-title{
+.team-title{
 	color:white;
 	background-color: lightgreen;
 	border-radius:10px;
 	font-size: 20px;;
 }
   
-/*   
-  .our-team .team-row {
+.our-team .team-row {
 	  margin-left: -40px;
 	  margin-right: -40px;
 	}
 	
-	.our-team .team-wrap {
+.our-team .team-wrap {
 	  padding: 0 40px;
 	}
 	
-	.our-team .container-fluid {
+.our-team .container-fluid {
 	  padding: 50 50px;
-	}  */
+	} 
 	
-	.team-img img {
+.team-img img {
 	  overflow: hidden;
 	  width: 400px;
+
 }
   
-	img{
+	/* img{
 	  border-radius: 0 50% 20% 40%;
-}  
+}   */
 	
 	.team-member,
 	.team-img {
@@ -254,7 +257,7 @@ header{
 	  width: 100%;
 	  height: 100%;
 	  opacity: 0;
-	  border-radius:100px 100px 100px 100px;
+	  /* border-radius: 0 50% 20% 40%; */
 }
 	
 	.team-details {
@@ -283,33 +286,38 @@ header{
 	  opacity: 1;
 }
 
-	.User{
-		color:white;
-		height:220px;
-		background-color: lightgreen;
-		border-radius: 100px;
+#paraAplikimit{
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Times New Roman', Times, serif;
+  border-bottom: 3px solid lightgreen;
+  border-top: 3px solid lightgreen;
+  
 }
 
-	#teName,
-	#teEmail,
-	#teNumber,
-	#teSubject{
-		text-align: right;
-		background-color: skyblue;
-		border-radius: 100px;
-		font-family: 'Times New Roman', Times, serif;
+#paraAplikimit:hover{
+  box-shadow: 50px 5px 5px lightgrey, 5px 5px 5px lightgrey;
 }
 
-	#tabela{
-		text-align: left;
-		width: 400px;
+/* footer{
+  background-color: #f3eee7;
+  cursor: pointer;
+} */
+
+footer{
+  background-color: #f3eee7;
+  /* cursor: pointer; */
 }
 
-	.submiti{
-		text-align: center;
+.phone{
+  color: black;
+  letter-spacing: 2px;
 }
 
-	#titulli{
-		text-align: center;
-		font-family: 'Times New Roman', Times, serif;
+.MeetOurTeam{
+  text-align: center;
+  margin-top: 60px;
+  color: white;
+  border-radius: 100px;
+  background-color: lightgreen;
 }
