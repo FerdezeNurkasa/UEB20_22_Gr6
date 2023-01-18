@@ -13,10 +13,6 @@ function showTime() {
     min = today.getMinutes(),
     sec = today.getSeconds();
 
-  // Set AM or PM
-  const amPm = hour >= 12 ? 'PM' : 'AM';
-
-
   // Output Time
   time.innerHTML = `${hour}<span>:</span>${addZero(min)}<span>:</span>${addZero(
     sec
