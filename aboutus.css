@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    background-color: #d4e3f3;
 }
 
 .ferdeza {
@@ -127,51 +126,14 @@ h1 {
     max-width: 400px;
 }
 
-.fotot {
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
-    transform: translateX(-50%);
-    display: flex;
-}
-
-ul {
-    display:list-item;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-.fotot li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    cursor: pointer;
-}
-
-li, a {
-    color: white;
-    text-decoration: none;
-}
-
-.fotot li img {
-    max-width: 60px;
-}
-
-
 .fotoja {
-    background: url(homee.svg);
-    background-size: 90px;
+    background-size: 100px;
     background-repeat: repeat-x;
     background-origin: border-box;
     margin-top: 55px;
     margin-bottom: 55px;
-    padding: 1.5em;
+    padding: 4em;
     color: white;
- 
 }
 
 .about-section{
@@ -182,6 +144,7 @@ li, a {
 }
 
 .inner-container{
+    
     width: 55%;
     float: right;
     background-color: antiquewhite;
@@ -219,7 +182,7 @@ li, a {
     background: #A58961;
     margin: 2px 50px;
     border-radius: 50%;
-    border: 3px solid #d4e3f3;
+    border: 3px solid ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -243,7 +206,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background:#d4e3f3;
+   
     margin: 0 auto;
     margin-top: 50px;
     border-radius: 5px;
@@ -298,9 +261,6 @@ p {
     margin-inline-end: 0px;
 }
 
-q {
-    display: inline;
-}
 section{
     position: relative;
 }
@@ -346,19 +306,18 @@ table th{
 
 .benefits-table .benefits {
     max-width: 375px;
-    border-color: #ededf0;
+    border-color: black;
     color: #53505A;
     float: left;
     width: 100%;
     padding: 20px 0px 10px;
     margin: 5px 15px;
-    border: 2px solid;
     text-align: center;
     box-sizing: border-box;
     border-collapse: collapse;
     border-radius: 10px 10px 50px 10px;
     transition: all .2s ease-in-out;
-    background: linear-gradient(45deg, #A58961, #F5EBE0);
+    background: #d3e3fd;
 }
 
 .benefits p {
@@ -402,4 +361,56 @@ tbody{
 .ta2 tr td {
     text-align:center;
     font-family: 'Poppins',sans-serif;
+}
+
+
+
+.header{
+    padding-top: 2rem;
+    padding-bottom:2rem;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--whatweoffer);
+    position: sticky;
+    top: 10;
+    left: 0;
+    right: 0px;
+    z-index: 800;
+}
+
+
+.header .logo img{
+   padding-left: 20px;
+   width: 150px;
+   height: 10px;
+    
+}
+
+
+.header .navbar a{
+    font-size:2rem;
+    font-weight: 500;
+    margin-left: 2rem;
+    color:var(--text);
+    margin-right: 2rem;
+
+
+}
+.header .navbar a:hover{
+    color:var(--activities);
+    text-decoration-line: underline;
+
+}
+
+
+footer{
+    background-color: #f3eee7;
+    cursor: pointer;
+}
+
+.phone{
+    color: black;
+    letter-spacing: 2px;
 }
