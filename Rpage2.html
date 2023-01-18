@@ -11,15 +11,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel = "stylesheet">
     <link rel = "stylesheet" href = "style/Registration.css">
-    <script src="Rpage2.js"></script>
 </head>
 
 <body>
-    <section class = "background2">
-           <h1> Here are the registration procedures </h1>
-    </section>
 
-  <h2>Here you should select the needs of you, to help us know to take a better care for you :)</h2><br>
+   <!--------------------Navigation--------------------->
+   <header>
+    <div class="navigation">
+        <a href="#" class="logo"><img src="images/Logo.png" alt="Logo"></a>
+        <i class="menu-toggle-btn fas fa-bars"></i>
+        <nav class="navigation-menu">
+            <a href="#"><i class="fa-sharp fa-solid fa-house home"></i>Home</a>
+            <a href="#"><i class="fa-sharp fa-solid fa-list about"></i>About us</a>
+            <a href="#"><i class="fa-sharp fa-solid fa-layer-group activities"></i>Activities</a>
+            <a href="#"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Contact Us</a>
+            <a class="search-box">
+                <input class="search-txt" type="text" placeholder="search">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+
+  <h2 id="background" style="margin: 0;">Here you should select the needs of you, to help us know to take a better care for you :)</h2><br>
   <div class = "row">
     <div class = "col"> <label for = "transport"> You need transportation? </label>
          <form class = "marginposhte">
@@ -29,7 +45,7 @@
             <label for = "no"> No </label><br>
         </form>
         <img src = "images/transport for pwd.png" alt = "Transport for people with disabilities"
-        style = "width: 300px; height: 250px;"><br><br>
+        style = "width: 80%; height: 80%;">
     </div>
     <div class = "col"> <label for = "disabilities"> What disabilities do you have: </label>
         <form class = "marginposhte">
@@ -46,10 +62,10 @@
                 <option value = "Deaf and Hard of Hearing"> Deaf and Hard of Hearing </option>
                 <option value = "Concussion"> Concussion </option>
                 <option value = "Autism Spectrum Disorders"> Autism Spectrum Disorders </option>
-            </select><br>
+            </select>
         </form>
         <img src = "images/different disabilities.png" alt = " People with different disabilities "
-        style = "width: 300px; height: 250px;"><br><br>
+        style = "width: 80%; height: 80%;">
     </div>
     <div class = "col">
         <label for = "therapy"> What therapy do you need: </label>
@@ -61,40 +77,52 @@
                 <option value = "medical"> Medical therapy </option>
                 <option value = "activities"> Activities </option>
             </select><br>
+            <div class = "col"> <label for = "finance"> Do you need financial assistance? </label>
+              <form class = "marginposhte">
+                 <input type = "radio" id = "yes" name = "transport" value = "Yes">
+                 <label for = "yes"> Yes </label>
+                 <input type = "radio" id = "no" name = "transport" value = "No">
+                 <label for = "no"> No </label><br>
+                 <img src = "images/financialy support.png" alt = "Finances for people with disabilities"
+                 style = "width: 300px; height: 250px;"> 
+                </div>
+             </form>
         </form>
-        <img src = "images/strong.png" alt = "People with different disabilities" style = "width: 300px; height: 250px;">
-    </div> <br><br>
-  </div><br><br>
+    </div> 
+  </div> 
         
-  <h2 class = "offer"> THIS IS WHAT OUR CLINIC OFFERS </h2><br><br>
-        
+  <h2 class = "offer"> THIS IS WHAT OUR CLINIC OFFERS </h2> 
         <div class = "row">
-            <div class = "col"> <img style="width: 500px; height: 400px" src = "images/hospitality.png" 
-                alt = "Great hospitality for people with disabilities"></div>
-                <div class = "col"> <img style="width: 500px; height:  400px" src = "images/transport.png" 
-                    alt = "Transport for people with disabilities"></div>
-            <div class = "col"> <img style="width: 500px; height:  400px" src = "images/education.jpg" 
-                alt = "Education for people with disabilities"> </div>
-            <div class="col"> <img style="width: 500px; height:  400px" src = "images/healthandsupport.png" 
-                alt = "Health and support for people with disabilities"> </div>
+            <div class = "col text-center"> 
+              <img class="RowImagesShow"  src = "images/hospitality.png" alt = "Great hospitality for people with disabilities">
+            </div>
+            <div class = "col text-center"> 
+              <img class="RowImagesShow"  src = "images/transport.png" alt = "Transport for people with disabilities">
+            </div>
+            <div class = "col text-center"> 
+              <img class="RowImagesShow" src = "images/education.jpg" alt = "Education for people with disabilities">
+            </div>
+            <div class = "col text-center">
+               <img class="RowImagesShow" src = "images/healthandsupport.png" alt = "Health and support for people with disabilities"> 
+            </div>
         </div>            
          <div class = "row">
-             <div class = "col">
+             <div class = "col text-center">
                  <h3> Great hospitality </h3>
              </div> 
-              <div class = "col">
+              <div class = "col text-center">
                  <h3> Transport </h3>
              </div> 
-              <div class = "col">
+              <div class="col text-center">
                  <h3> Learning and education </h3>
              </div> 
-              <div class = "col">
+              <div class = "col text-center">
                  <h3> Health and support </h3>
              </div>
-         </div><br><br> 
+         </div> 
    </div>
 
-   <h2> Some of our happy clients. We guarantee you incredible services that can help be one of them! </h2>
+  <div class="container"> <h2> Some of our happy clients. We guarantee you incredible services that can help be one of them! </h2></div>
  <!-- Container for the image gallery -->
  <div class="container">
 
@@ -187,6 +215,65 @@
         <img class="demo cursor" src="images\sign language.png" style="width:100px" onclick="currentSlide(10)" alt="client10">
       </div>
     </div>
+  </div>
+    <!--------------------Footer--------------------->
+    <footer class="text-dark pt-2 pb-1">
+      <div class="container text-center text-md-left">
+          <div class="row text-center text-md-left">
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-info">Contact us</h5>
+                  <hr class="mb-2">
+                  <p>
+                      <li class="fas fa-envelope mr-3"></li>23 Main, Street
+                  </p>
+                  <p>
+                      <li class="fas fa-home mr-3"></li>New Yourk, United States
+                  </p>
+                  <p>
+                      <a class="fas fa-phone mr-3 phone" href="tel:+91225467834">+91225467834</a>
+                  </p>
+              </div>
+
+             
+              <hr class="mb-2">
+              <div class="row d-flex justufy-content-center">
+              <div>
+                  <p>Copyright 2023 All Rights Reserved By:
+                      <a href="#" style="text-decoration: none;">
+                      <strong class="text-info">The Providers</strong>
+                      </a>
+                  </p>
+              </div>
+          </div>
+
+          <div class="row d-flex justify-content-center">
+              <div class="text-center">
+                  <ul class="list-unstyled list-inline">
+                      <li class="list-inline-item">
+                          <a href="#" class="text-dark"><li class="fab fa-facebook"></li></a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#" class="text-dark"><li class="fab fa-twitter"></li></a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#" class="text-dark"><li class="fab fa-google-plus"></li></a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#" class="text-dark"><li class="fab fa-linkedin-in"></li></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <script type="text/javascript">
+      $(".menu-toggle-btn").click(function(){
+          $(this).toggleClass("fa-times");
+          $(".navigation-menu").toggleClass("active");
+      });
+  </script>
+  <script src="Rpage2.js"></script>
   
 </body>
 
