@@ -1,385 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="ourteam.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ad94472dc5.js" crossorigin="anonymous"></script>
-    <title>OUR TEAM</title>
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    <!-- <script type = "text/javascript">
-      function validate() {
-      var text;
-
-      for(let i = 0; i < document.myForm.length; i++){
-         if(document.myForm[i].value==""){
-             text = `${document.myForm[i].name} cannot be empty`;              
-             document.getElementById("demo").innerHTML = text;
-            document.myForm[i].focus() ;
-            return false;
-          }
-       }
-       //   if( document.myForm.name.value == "" ) {        
-       //     text = "Name cannot be empty";
-       //      document.getElementById("demo").innerHTML = text;
-       //      document.myForm.name.focus() ;
-       //      return false;
-       //   }
-       //   if( document.myForm.email.value == "" ) {
-       //     text = "E-mail cannot be empty";
-       //      document.getElementById("demo").innerHTML = text;
-       //      document.myForm.email.focus() ;
-       //      return false;
-       //   }
-    var emailID = document.myForm.email.value;
-    atposn = emailID.indexOf("@");
-    dotposn = emailID.lastIndexOf(".");
-    if (atposn < 1 || ( dotposn - atposn < 2 ) || emailID[emailID.length -1] == '.') {
-    text = "Please enter valid email ID";
-    document.getElementById("demo").innerHTML = text;
-    document.myForm.email.focus() ;
-    return false;
-  }
-
-
- //  document.myForm.phone.value == "" ||
-         if(  isNaN( document.myForm.phone.value ) ||
-            document.myForm.phone.value.length != 9 ) {
-            text = "Please enter a valid 9-digit phone number";
-            document.getElementById("demo").innerHTML = text;
-            document.myForm.phone.focus() ;
-            return false;
-         }
-         if( document.myForm.subject.value == "0" ) {
-            text = "Please provide your area of expertise";
-            document.getElementById("demo").innerHTML = text;
-            return false;
-         }
-         alert("You have applied successfully!");
-         return( true );
-      }
-
-      // function checkEmail(email){
-
-      // }
-   </script> -->
-
+    <link rel="stylesheet" href="ourteam.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Responsive Our Team Section</title>
 </head>
 <body>
-  <header>
-    <div class="navigation">
-        <a href="#" class="logo"><img src="images/Logo.png" alt="Logo"></a>
-        <i class="menu-toggle-btn fas fa-bars"></i>
-        <nav class="navigation-menu">
-            <a href="#"><i class="fa-sharp fa-solid fa-house home"></i>Home</a>
-            <a href="#"><i class="fa-sharp fa-solid fa-list about"></i>About us</a>
-            <a href="ourteam.html"><i class="fa fa-users" aria-hidden="true"></i>Our Team</a>
-            <a href="#"><i class="fa-sharp fa-solid fa-layer-group activities"></i>Activities</a>
-            <a href="#"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Contact Us</a>
-            <a class="search-box">
-                <input class="search-txt" type="text" placeholder="search">
-                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-            </a>
-            
-            
-        </nav>
 
-    </div>
-</header>
+    <header>
+        <div class="navigation">
+            <a href="#" class="logo"><img src="images/Logo.png" alt="Logo"></a>
+            <i class="menu-toggle-btn fas fa-bars"></i>
+            <nav class="navigation-menu">
+                <a href="#"><i class="fa-sharp fa-solid fa-house home"></i>Home</a>
+                <a href="#"><i class="fa-sharp fa-solid fa-list about"></i>About us</a>
+                <a href="ourteam.html"><i class="fa fa-users" aria-hidden="true"></i>Our Team</a>
+                <a href="#"><i class="fa-sharp fa-solid fa-layer-group activities"></i>Activities</a>
+                <a href="#"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Contact Us</a>
+                <a class="search-box">
+                    <input class="search-txt" type="text" placeholder="search">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </a>
+                
+                
+            </nav>
+    
+        </div>
+    </header>
 
-
-      <div class="MeetOurTeam">
-
-        <h1>Meet our team</h1>
-
-      </div>
+  <section id="team">
+      <h1 class="heading">
+          <i class="fas fa-rocket"></i><strong>Our Team</strong>
+      </h1>
       <div class="container">
-        <div class="row heading">
-          <div class="col-md-6 col-md-offset-3">
-            <p class="subheading text-center"></p>
-          </div>
-        </div>
-      
-        <div class="row team-row">
-      
-          <div class="col-md-4 col-sm-6 team-wrap">
-            <div class="team-member text-center">
-              <div class="team-img">
-                <!-- <span class="doctor">Doctor</span> -->
-                <img src="images/JohnMarshall.png" alt="">
-                <div class="overlay">
-                  <div class="team-details text-center">
-                    
-                    <p><b><i>Dr. John Marshall was born in Pennsylvania and is a graduate of Villanova University.</i></b></p>
-                    <p><b><i>He obtained his medical degree at Thomas Jefferson University in Philadelphia.</i></b></p>
-                    
-                    
+          <div class="box">
+              <div class="top-bar"></div>
+                  <div class="nav">
+                      <i class="verify fas fa-check-circle"></i>
+                      <input type="checkbox" class="heart-btn" id="heart-btn">
+                      <label  class="heart"></label>
                   </div>
-                </div>
-              </div>
-              <h6 class="team-title">John Marshall</h6>
-            </div>
-          </div>
-          <!-- end team member -->
-      
-          <div class="col-md-4 col-sm-6 team-wrap">
-            <div class="team-member text-center2">
-              <div class="team-img">
-                <!-- <span class="doctor">Doctor</span> -->
-                <img src="images/SteveRoberts.png" alt="">
-                <div class="overlay">
-                  <div class="team-details text-center">
-    
-                    <p><b><i>Dr. Steve Roberts was born in New York City and is a graduate of Harvard University.</i></b></p>
-                    <p><b><i>He obtained his medical degree at Thomas Jefferson University in Philadelphia.</i></b></p>
-    
-                  </div>
-                </div>
-              </div>
-              <h6 class="team-title">Steve Roberts</h6>
-            </div>
-          </div>
-          <!-- end team member -->
-      
-          <div class="col-md-4 col-sm-6 team-wrap">
-            <div class="team-member last text-center3">
-              <div class="team-img">
-                <!-- <span class="doctor">Doctor</span> -->
-                <img src="images/MichaelCartney.png" alt="">
-                <div class="overlay">
-                  <div class="team-details text-center">
-    
-                    <p><b><i>Dr. Michael Cartney was born in Newburgh and is a graduate of Stanford University.</i></b></p>
-                    <p><b><i>He obtained his medical degree at New York University.</i></b></p>
-    
-                    
-                  </div>
-                </div>
-              </div>
-              <h6 class="team-title">Michael Cartney</h6>
-            </div>
-          </div>
-          <!-- end team member -->
-    
-          <div class="col-md-4 col-sm-6 team-wrap">
-            <div class="team-member last text-center4">
-              <div class="team-img">
-                <!-- <span class="doctor">Doctor</span> -->
-                <img src="images/JasperHicks.png" alt="">
-                <div class="overlay">
-                  <div class="team-details text-center">
-                    
-                    <p><b><i>Dr. Jasper Hicks was born in Hempstead town and is a graduate at University of California.</i></b></p>
-                    <p><b><i>He obtained his medical degree at Baylor College of Medicine.</i></b></p>
-                    
-                  </div>
-                </div>
-              </div>
-              <h6 class="team-title">Jasper Hicks</h6>
-            </div>
-          </div>
-          <!-- end team member -->
-    
-          <div class="col-md-4 col-sm-6 team-wrap">
-            <div class="team-member last text-center5">
-              <div class="team-img">
-                <!-- <span class="doctor">Doctor</span> -->
-                <img src="images/SummerValdez.png" alt="">
-                <div class="overlay">
-                  <div class="team-details text-center">
-                    
-                    <p><b><i>Dr. Summer Valdez was born in Brookhaven and is a graduate of Yale University.</i></b></p>
-                    <p><b><i>She obtained his medical degree at William Carey University College of Osteopathic Medicine.</i></b></p>
-                    
-                  </div>
-                </div>
-              </div>
-              <h6 class="team-title">Summer Valdez</h6>
-            </div>
-          </div>
-          <!-- end team member -->
-    
-          <div class="col-md-4 col-sm-6 team-wrap">
-            <div class="team-member last text-center6">
-              <div class="team-img">
-                <!-- <span class="doctor">Doctor</span> -->
-                <img src="images/TillyTownsend.png" alt="">
-                <div class="overlay">
-                  <div class="team-details text-center">
-                    
-                    <p><b><i>Dr. Tilly Townsend was born in Islip and is a graduate of Columbia University.</i></b></p>
-                    <p><b><i>She obtained his medical degree at Edward Via College of Osteopathic Medicine.</i></b></p>
-                    
-                  </div>
-                </div>
-              </div>
-              <h6 class="team-title">Tilly Townsend</h6>
-            </div>
-          </div>
-          <!-- end team member -->
-    
-          <div class="col-md-4 col-sm-6 team-wrap">
-            <div class="team-member last text-center7">
-              <div class="team-img">
-                <!-- <span class="doctor">Nurse</span> -->
-                <img src="images/MarleySteele.png" alt="">
-                <div class="overlay">
-                  <div class="team-details text-center">
-                    
-                    <p><b><i>Dr. Marley Steele was born in Buffalo and is a graduate at University of Pennsylvania.</i></b></p>
-                    <p><b><i>She obtained his medical degree at University of Miami.</i></b></p>
-                    
-                  </div>
-                </div>
-              </div>
-              <h6 class="team-title">Marley Steele</h6>
-            </div>
-          </div>
-          <!-- end team member -->
 
-          <div class="col-md-4 col-sm-6 team-wrap">
-            <div class="team-member last text-center7">
-              <div class="team-img">
-                <!-- <span class="doctor">Nurse</span> -->
-                <img src="images/KatieEdwards.png" alt="">
-                <div class="overlay">
-                  <div class="team-details text-center">
-                    
-                    <p><b><i>Dr. Katie Edwards was born in New York and is a graduate at University of Pennsylvania.</i></b></p>
-                    <p><b><i>She obtained his medical degree at University of Washington.</i></b></p>
-                    
+                  <div class="details">
+                      <img src="images/JohnMarshall.png" alt="">
+                      <strong>John Marshall</strong>
+                      <p>JohnMarshall@gmail.com</p>
                   </div>
-                </div>
-              </div>
-              <h6 class="team-title">Katie Edwards</h6>
-            </div>
-          </div>
-          <!-- end team member -->
 
-          <div class="col-md-4 col-sm-6 team-wrap">
-            <div class="team-member last text-center7">
-              <div class="team-img">
-                <!-- <span class="doctor">Nurse</span> -->
-                <img src="images/AnaMoore.png" alt="">
-                <div class="overlay">
-                  <div class="team-details text-center">
-                    
-                    <p><b><i>Dr. Ana Moore was born in Chicago and is a graduate at University of New York.</i></b></p>
-                    <p><b><i>She obtained his medical degree at University of Pennsylvania.</i></b></p>
-                    
+                  <div class="btn">
+                      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                      
+                  </div>
+              </div>
+          <div class="box">
+              <div class="top-bar"></div>
+                  <div class="nav">
+                      <i class="verify fas fa-check-circle"></i>
+                      <input type="checkbox" class="heart-btn" id="heart-btn">
+                      <label  class="heart"></label>
+                  </div>
+
+                  <div class="details">
+                      <img src="images/SteveRoberts.png" alt="">
+                      <strong>Steve Roberts</strong>
+                      <p>SteveRoberts@gmail.com</p>
+                  </div>
+
+                  <div class="btn">
+                      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                      
+                  </div>
+              </div>
+          <div class="box">
+              <div class="top-bar"></div>
+                  <div class="nav">
+                      <i class="verify fas fa-check-circle"></i>
+                      <input type="checkbox" class="heart-btn" id="heart-btn">
+                      <label  class="heart"></label>
+                  </div>
+
+                  <div class="details">
+                      <img src="images/MichaelCartney.png" alt="">
+                      <strong>Michael Cartney</strong>
+                      <p>MichaelCartney@gmail.com</p>
+                  </div>
+
+                  <div class="btn">
+                      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                      
                   </div>
                 </div>
-              </div>
-              <h6 class="team-title">Ana Moore</h6>
-            </div>
+          <div class="box">
+              <div class="top-bar"></div>
+                  <div class="nav">
+                      <i class="verify fas fa-check-circle"></i>
+                      <input type="checkbox" class="heart-btn" id="heart-btn">
+                      <label  class="heart"></label>
+                  </div>
+
+                  <div class="details">
+                      <img src="images/JasperHicks.png" alt="">
+                      <strong>Jasper Hicks</strong>
+                      <p>JasperHicks@gmail.com</p>
+                  </div>
+
+                  <div class="btn">
+                      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                      
+                  </div>
+              
           </div>
-          <!-- end team member -->
-      
+
+          <div class="box">
+            <div class="top-bar"></div>
+                <div class="nav">
+                    <i class="verify fas fa-check-circle"></i>
+                    <input type="checkbox" class="heart-btn" id="heart-btn">
+                    <label  class="heart"></label>
+                </div>
+
+                <div class="details">
+                    <img src="images/SummerValdez.png" alt="">
+                    <strong>Summer Valdez</strong>
+                    <p>SummerValdez@gmail.com</p>
+                </div>
+
+                <div class="btn">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    
+                </div>
+            
         </div>
+
+          
+        <div class="box">
+            <div class="top-bar"></div>
+                <div class="nav">
+                    <i class="verify fas fa-check-circle"></i>
+                    <input type="checkbox" class="heart-btn" id="heart-btn">
+                    <label  class="heart"></label>
+                </div>
+
+                <div class="details">
+                    <img src="images/TillyTownsend.png" alt="">
+                    <strong>Tilly Townsend</strong>
+                    <p>TillyTownsend@gmail.com</p>
+                </div>
+
+                <div class="btn">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    
+                </div>
+            
+        </div>
+        
+          
+        <div class="box">
+            <div class="top-bar"></div>
+                <div class="nav">
+                    <i class="verify fas fa-check-circle"></i>
+                    <input type="checkbox" class="heart-btn" id="heart-btn">
+                    <label  class="heart"></label>
+                </div>
+
+                <div class="details">
+                    <img src="images/MarleySteele.png" alt="">
+                    <strong>Marley Steele</strong>
+                    <p>MarleySteele@gmail.com</p>
+                </div>
+
+                <div class="btn">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    
+                </div>
+            
+        </div>
+        
+          
+        <div class="box">
+            <div class="top-bar"></div>
+                <div class="nav">
+                    <i class="verify fas fa-check-circle"></i>
+                    <input type="checkbox" class="heart-btn" id="heart-btn">
+                    <label  class="heart"></label>
+                </div>
+
+                <div class="details">
+                    <img src="images/KatieEdwards.png" alt="">
+                    <strong>Katie Edwards</strong>
+                    <p>KatieEdwards@gmail.com</p>
+                </div>
+
+                <div class="btn">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    
+                </div>
+            
+        </div>
+
+
       </div>
+  </section>
+
+  <p id="paraAplikimit">We need more doctors and nurses. You can apply <a href="Apply.html">here</a></p>
+
+  <footer class="text-dark pt-2 pb-1">
+    <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-info">Contact us</h5>
+                <hr class="mb-2">
+                <p>
+                    <li class="fas fa-envelope mr-3"></li>23 Main, Street
+                </p>
+                <p>
+                    <li class="fas fa-home mr-3"></li>New York, United States
+                </p>
+                <p>
+                    <a class="fas fa-phone mr-3 phone" href="tel:+91225467834">+91225467834</a>
+                </p>
+            </div>
+
+           
+            <hr class="mb-2">
+            <div class="row d-flex justufy-content-center">
+            <div>
+                <p>Copyright 2023 All Rights Reserved By:
+                    <a href="#" style="text-decoration: none;">
+                    <strong class="text-info">The Providers</strong>
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="text-center">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">
+                      <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a> 
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.googleplus.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a> 
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
-      <p id="paraAplikimit">We need more doctors and nurses. You can apply <a href="Aplikimii4.html">here</a></p>
 
-      <!-- <div class="User"> -->
-        <!-- <form action = "" name = "myForm" onsubmit = "return(validate());">
-          <h1 align="center">YOU CAN APPLY HERE</h1>
-            <table align="center" cellspacing = "3" cellpadding = "3" border = "3">
-               <tr>
-                  <td align = "right">Name</td>
-                  <td><input type = "text" name = "name" /></td>
-               </tr>
-               <tr>
-                  <td align = "right">E-mail</td>
-                  <td><input type = "text" name = "email" /></td>
-               </tr>
-               <tr>
-                  <td align = "right">Phone Number</td>
-                  <td><input type = "text" name = "phone" /></td>
-               </tr>
-               <tr>
-                  <td align = "right">Subject</td>
-                  <td>
-                     <select name = "subject">
-                        <option value = "0" selected>Select</option>
-                        <option value = "1">DOCTOR</option>
-                        <option value = "2">NURSE</option>
-                     </select>
-                  </td>
-               </tr>
-            </table>
-            <p id="demo" style="color:red; text-align:center"></p>
-      <div style="text-align:center"><input type = "submit" value = "Submit" /></div>
-         </form> -->
-
-
-<!-- footer -->
-         <footer class="text-dark pt-2 pb-1">
-          <div class="container text-center text-md-left">
-              <div class="row text-center text-md-left">
-                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                      <h5 class="text-uppercase mb-4 font-weight-bold text-info">Contact us</h5>
-                      <hr class="mb-2">
-                      <p>
-                          <li class="fas fa-envelope mr-3"></li>23 Main, Street
-                      </p>
-                      <p>
-                          <li class="fas fa-home mr-3"></li>New York, United States
-                      </p>
-                      <p>
-                          <a class="fas fa-phone mr-3 phone" href="tel:+91225467834">+91225467834</a>
-                      </p>
-                  </div>
-  
-                 
-                  <hr class="mb-2">
-                  <div class="row d-flex justufy-content-center">
-                  <div>
-                      <p>Copyright 2023 All Rights Reserved By:
-                          <a href="#" style="text-decoration: none;">
-                          <strong class="text-info">The Providers</strong>
-                          </a>
-                      </p>
-                  </div>
-              </div>
-  
-              <div class="row d-flex justify-content-center">
-                  <div class="text-center">
-                      <ul class="list-unstyled list-inline">
-                          <li class="list-inline-item">
-                            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                          </li>
-                          <li class="list-inline-item">
-                              <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a> 
-                          </li>
-                          <li class="list-inline-item">
-                              <a href="https://www.googleplus.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a> 
-                          </li>
-                          <li class="list-inline-item">
-                            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </footer>
-
-      
-      <script type="text/javascript">
-        $(".menu-toggle-btn").click(function(){
-            $(this).toggleClass("fa-times");
-            $(".navigation-menu").toggleClass("active");
-        });
-    </script>
+  <script type="text/javascript">
+    $(".menu-toggle-btn").click(function(){
+        $(this).toggleClass("fa-times");
+        $(".navigation-menu").toggleClass("active");
+    });
+</script>
 
 </body>
 </html>
