@@ -163,7 +163,7 @@ li, a {
 
 
 .fotoja {
-    background: url(home.svg);
+    background: url(homee.svg);
     background-size: 90px;
     background-repeat: repeat-x;
     background-origin: border-box;
@@ -312,7 +312,7 @@ section{
 
 .benefits-section {
     padding: 40px 20px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .benefits-div{
@@ -367,4 +367,40 @@ table th{
     height: 85px;
     padding: 10px;
     background: linear-gradient(45deg, #A58961, #F5EBE0);
+}
+
+.client-text {
+    margin-left:120px;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    margin-top: -100px;
+    margin-bottom: 390px;
+    position:absolute;
+    background: linear-gradient( to right,rgb(182, 182, 182) 50%, #ffca587d 50%, #cc752e4d);
+    background-size: 200%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    transition:0.5s ease-out;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent:initial;
+    border-spacing: 2px;
+    border-color: grey;
+    width:100%;
+    background: linear-gradient(45deg, #A58961, #F5EBE0);
+}
+
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+.ta2 tr td {
+    text-align:center;
+    font-family: 'Poppins',sans-serif;
 }
