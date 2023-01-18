@@ -303,18 +303,7 @@ table{
     border-color: #5699e0;
     background-color: #dfedfb;
 }
-img{
-    width:18cm;
-    height: 10cm;
-    display:flex;
-   box-shadow: 0 4px 8px rgba(0,0,0,.3);
-   border-radius: 10px;
-   padding: 0 10px 0 0;
-   margin-top: 50px;
-   float: left;
-   justify-content: center;
 
-}
 h4{
     font-size: 1.5cm;
     color: #84add9;
