@@ -1,4 +1,3 @@
-//DOM elements
 const time = document.getElementById('time'),
   greeting = document.getElementById('greeting')
 
@@ -25,8 +24,6 @@ function showTime() {
 function addZero(n) {
   return (parseInt(n, 10) < 10 ? '0' : '') + n;
 }
-
-
 
 // Run
 showTime();
