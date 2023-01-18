@@ -272,7 +272,7 @@ header{
 .Info-card:hover .Info-card-header{
     box-shadow: 0 0 0 26em rgb(211, 234, 220);
 }
-ul li{
+ol li{
     padding-right: 30px;
     list-style: none;
     text-size-adjust: 20px;
@@ -328,11 +328,28 @@ button:hover{
         width: 7rem;
     }
 
-    ul li{
+    ol li{
         font-size: 10px;
     }
    
 }
+svg{
+    width:250px;
+    height:300px;
+    fill:#d4e3f3; 
+
+}
+#svg1{
+    display: flex;
+    float: left;
+    position: absolute;
+    padding-top: 20px;
+    padding-right: 5px;
+  
+}
+
+
+
 
 #container{
 	width:800px;
