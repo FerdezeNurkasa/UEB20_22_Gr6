@@ -1,5 +1,8 @@
 *{
+    
     box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 header{
@@ -160,12 +163,13 @@ header{
 }
 
 .ferdeza {
+   
     margin-top: 10px;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
     text-align: center;
     color: white;
-    background-size: 600px;
+    padding: 100px;
 }
 
 h1 {
@@ -178,6 +182,7 @@ h1 {
     border-top: double #38a8bc;
     color: #207284;
     padding: 5px;
+border-spacing: 90px;
 }
 
 #time {
@@ -185,7 +190,7 @@ h1 {
     border: double 1px #38a8bc;
     padding: 5px;
     color: black;
-    margin-top: 40px;
+    margin-top: 50px;
     float: right;
     margin-right: 30px;
 }
@@ -193,6 +198,7 @@ h1 {
 #greeting{
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 .section_s {
@@ -563,4 +569,33 @@ footer{
 .phone{
     color: black;
     letter-spacing: 2px;
+}
+
+.box4 {
+    width: 95%;
+    height: fit-content;
+    display: inline-block;
+    margin: 1% 2%;
+    padding: 5px;
+    color: rgb(30, 128, 147);
+}
+
+.box4 p {
+    background: aliceblue;
+}
+.box41, .box42, .box43 {
+    width: 340px;
+    height: 200px;
+    margin: 5px 1% 0 1%;
+    padding: 3px 10px;
+    text-align: center;
+    border-radius: 10px;
+    float: left;
+    background: aliceblue;
+    box-shadow:#38a8bc ;
+}
+
+.center-div {
+    margin-top: 50px;
+    text-align: center;
 }
