@@ -621,31 +621,39 @@ footer{
     text-decoration: underline;
 }
  
-.comment-box{
-    width: 50%;
-    border: 1px solid  #0783bc;
-    margin: 50px 0;
-    padding: 10px 20px;
-    font-family: 'Poppins',sans-serif;
-    border-radius: 5px;
-    margin-left: 25%;
+
+h3 {
+    font-size: 25px;
+    color: black;
+}
+
+.glyphicon-pencil {
+    font-size: 35px;
+    color: white;
+    float: right;
+    margin-top: 20px;
+}
+
+.col-md-5 {
     margin-top: 80px;
-    box-shadow: 0 0 10px 1px aliceblue;
+    box-shadow: -1px 1px 60px 10px black;
+    background: rgba(0, 0, 0, 4);
 }
 
-.comment-box p{
-    text-align: left;
-    font-size: 28px;
-    color: #777;
+.label {
+    font-weight: normal;
+    margin-top: 15px;
+    color: black;
+    font-size: 19px;
 }
 
-.comment-form input, .comment-form textarea{
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    outline: none;
+.form-control {
+    background: transparent;
+    border-radius: 0px;
+    border:0px;
+    border-bottom: 1px solid white;
     font-size: 18px;
-    border: 1px solid #ddd;
-    color: #777;
+    margin-top: 15px;
+    height: 40px;
+    color: white;
 }
