@@ -163,15 +163,13 @@ header{
 }
 
 .ferdeza {
+   
     margin-top: 10px;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
     text-align: center;
     color: white;
-    background-size: 600px;
     padding: 100px;
-    width: 100%;
-    height: 70px;
 }
 
 h1 {
@@ -184,6 +182,7 @@ h1 {
     border-top: double #38a8bc;
     color: #207284;
     padding: 5px;
+border-spacing: 90px;
 }
 
 #time {
@@ -191,7 +190,7 @@ h1 {
     border: double 1px #38a8bc;
     padding: 5px;
     color: black;
-    margin-top: 40px;
+    margin-top: 50px;
     float: right;
     margin-right: 30px;
 }
