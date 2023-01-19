@@ -163,15 +163,13 @@ header{
 }
 
 .ferdeza {
+   
     margin-top: 10px;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
     text-align: center;
     color: white;
-    background-size: 600px;
     padding: 100px;
-    width: 100%;
-    height: 70px;
 }
 
 h1 {
@@ -182,8 +180,11 @@ h1 {
     font-size: 20px;
     border-bottom: double #38a8bc;
     border-top: double #38a8bc;
+    border-left:double #38a8bc ;
+    border-right: double #38a8bc;
     color: #207284;
     padding: 5px;
+border-spacing: 90px;
 }
 
 #time {
@@ -191,7 +192,7 @@ h1 {
     border: double 1px #38a8bc;
     padding: 5px;
     color: black;
-    margin-top: 40px;
+    margin-top: 50px;
     float: right;
     margin-right: 30px;
 }
@@ -328,7 +329,7 @@ h1 {
 }
 
 .image-container_a {
-    margin-top: 100px;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -597,6 +598,54 @@ footer{
 }
 
 .center-div {
-    margin-top: 50px;
+    margin-top: -5%;
     text-align: center;
+}
+
+.transport_container {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 24px;
+    height: 500px;
+    background: none;
+}
+
+.transport_container
+.transport_main {
+    width: 100%;
+    background: url(images/transporti.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 350px;
+    text-align: center;
+    text-decoration: underline;
+}
+ 
+.comment-box{
+    width: 50%;
+    border: 1px solid  #0783bc;
+    margin: 50px 0;
+    padding: 10px 20px;
+    font-family: 'Poppins',sans-serif;
+    border-radius: 5px;
+    margin-left: 25%;
+    margin-top: 80px;
+    box-shadow: 0 0 10px 1px aliceblue;
+}
+
+.comment-box p{
+    text-align: left;
+    font-size: 28px;
+    color: #777;
+}
+
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    color: #777;
 }

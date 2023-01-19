@@ -6,23 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply</title> 
 
-    <style> 
-      body {
-         background: white;
-      }
+   <style>
+    #myCanvas {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      border-radius: 100px;
+      background-color: #d4e3f3; 
+      /* width: 800px; */
+     }
 
-      #canvas {
-         display: none;
-         width: 100%;
-      }
-
-      #snapshotImageElement {
-         position: absolute;
-         left: 10px;
-         margin: 20px;
-         border: thin solid white;
-         margin-left: 37%;
-      }
+     #Emaili{
+      /* border: 2px solid #d4e3f3; */
+      border-radius: 10px;
+      margin-top: 20px;
+      text-align: center;
+      background-color: #d4e3f3;
+     }
+     tr{
+      background-color: #d4e3f3;
+     }
    </style>
 
     <script type = "text/javascript">
@@ -110,109 +115,20 @@
              </tr>
           </table>
           <p id="demo" style="color:red; text-align:center"></p>
-    <div style="text-align:center"><input type = "submit" value = "Submit" /></div>
+          <div style="text-align:center"><input type = "submit" value = "Submit" /></div>
        </form>
 
-       
-         <img id='snapshotImageElement'/>
-         
-         <canvas id='canvas' width='400' height='400'>
-           Canvas not supported
-         </canvas>
-     
-         <script type = "text/javascript">
+       <canvas id="myCanvas" width="1000" height="100" style="border:1px solid #d3d3d3;"></canvas>
 
-var canvas = document.getElementById('canvas'),
-    context = canvas.getContext('2d'),
-    snapshotButton = document.getElementById('snapshotButton'),
-    snapshotImageElement = document.getElementById('snapshotImageElement'),
-    FONT_HEIGHT = 15,
-    MARGIN = 35,
-    HAND_TRUNCATION = canvas.width/25,
-    HOUR_HAND_TRUNCATION = canvas.width/10,
-    NUMERAL_SPACING = 20,
-    RADIUS = canvas.width/2 - MARGIN,
-    HAND_RADIUS = RADIUS + NUMERAL_SPACING,
-    loop;
+       <script>
+         var canvas = document.getElementById("myCanvas");
+         var ctx = canvas.getContext("2d");
+         ctx.font = "18px Times";
+         ctx.fillText("A hero is an ordinary individual who finds the strength to persevere and endure in spite of overwhelming obstacles. - Christopher Reeve",10,50);
+      </script>
 
-// Functions.....................................................
 
-function drawCircle() {
-   context.beginPath();
-   context.arc(canvas.width/2, canvas.height/2, RADIUS, 0, Math.PI*2, true);
-   context.stroke();
-}
-   
-function drawNumerals() {
-   var numerals = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ],
-       angle = 0,
-       numeralWidth = 0;
-
-   numerals.forEach(function(numeral) {
-      angle = Math.PI/6 * (numeral-3);
-      numeralWidth = context.measureText(numeral).width;
-      context.fillText(numeral, 
-         canvas.width/2  + Math.cos(angle)*(HAND_RADIUS) - numeralWidth/2,
-         canvas.height/2 + Math.sin(angle)*(HAND_RADIUS) + FONT_HEIGHT/3);
-   });
-}
-
-function drawCenter() {
-   context.beginPath();
-   context.arc(canvas.width/2, canvas.height/2, 5, 0, Math.PI*2, true);
-   context.fill();
-}
-
-function drawHand(loc, isHour) {
-   var angle = (Math.PI*2) * (loc/60) - Math.PI/2,
-       handRadius = isHour ? RADIUS-HAND_TRUNCATION-HOUR_HAND_TRUNCATION 
-                           : RADIUS-HAND_TRUNCATION;
-
-   context.moveTo(canvas.width/2, canvas.height/2);
-   context.lineTo(canvas.width/2  + Math.cos(angle)*handRadius, 
-                  canvas.height/2 + Math.sin(angle)*handRadius);
-   context.stroke();
-}
-
-function drawHands() {
-   var date = new Date,
-       hour = date.getHours();
-   hour = hour > 12 ? hour - 12 : hour;
-   drawHand(hour*5 + (date.getMinutes()/60)*5, true, 0.5);
-   drawHand(date.getMinutes(), false, 0.5);
-   drawHand(date.getSeconds(), false, 0.2);
-}
-
-function updateClockImage() {
-   dataUrl = canvas.toDataURL();
-   snapshotImageElement.src = dataUrl;
-}
-
-function drawClock() {
-   context.clearRect(0,0,canvas.width,canvas.height);
-
-   context.save();
-
-   context.fillStyle = 'rgba(255,255,255,0.8)';
-   context.fillRect(0, 0, canvas.width, canvas.height);
-
-   drawCircle();
-   drawCenter();
-   drawHands();
-
-   context.restore();
-
-   drawNumerals();
-
-   updateClockImage();
-}
-
-// Initialization................................................
-
-context.font = FONT_HEIGHT + 'px Arial';
-loop = setInterval(drawClock, 1000);
-         </script>
-       
-       
+<p id="Emaili"><b>If you find difficulties during the application, let us know and we will help you. </b><a href = "mailto: hopeclinic@example.com">Click here to mail us</a></p>
+    
 </body>
 </html>
