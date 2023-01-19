@@ -1,5 +1,4 @@
 *{
-    
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
@@ -507,7 +506,7 @@ table {
     border-spacing: 2px;
     border-color: grey;
     width:100%;
-    background: linear-gradient(45deg, #65dce78f, #88dee6);
+    background: linear-gradient(45deg, #57b1d88f, #64a6d8);
 }
 
 .ta2 tr td {
@@ -572,8 +571,9 @@ footer{
     height: fit-content;
     display: inline-block;
     margin: 1% 2%;
-    padding: 5px;
+    padding: 10px;
     color: rgb(54, 154, 174);
+   align-items: center;
 }
 
 .box4 p {
@@ -651,3 +651,4 @@ h3 {
     height: 40px;
     color: white;
 }
+
