@@ -47,35 +47,41 @@
          <div class = "row">
             <div class = "col mb-3">
                <label for = "fname" > Name: </label>
-               <input type = "text" id = "fname" name = "fname" >
+               <input type = "text" id = "fname" name = "fname" autocomplete="on" required>
             </div>
          </div>
          <div class = "row">
             <div class = "col mb-2">
                <label for = "sname" > Surname: </label>
-               <input type = "text" id = "sname" name = "sname" > 
+               <input type = "text" id = "sname" name = "sname" required> 
             </div>
          </div>
          <div class = "row">
            <div class = "col mb-2">
              <label for = "email" > Email: </label>
-               <input type = "email" id = "email" name = "email" >
+               <input type = "email" id = "email" name = "email" required>
             </div>
+         </div>
+            <div class = "row">
+               <div class = "col mb-2">
+                 <label for = "password" > Password: </label>
+                   <input type = "password" id = "password" name = "password" required>
+                </div>
          </div>
          <div class = "row">
             <div class = "col mb-2">
               <label for = "nrtel" > Telephone: </label>
-               <input type = "tel" id = "nrtel" name = "nrtel" >
+               <input type = "tel" id = "nrtel" name = "nrtel" required>
             </div>
          </div>
          <div class = "row">
             <div class = "col mb-3">
                <label for = "address"> Address: </label>
-               <input type = "text" id = "address" name = "address" >
+               <input type = "text" id = "address" name = "address" required>
             </div>
          </div>
          <label for = "member" > Are you a member of any other organizations? </label>
-         <form class = "marginbox" id = "marginright">
+         <form class = "marginbox" id = "marginright" autocomplete="on">
             <input type = "radio" id = "yes" name = "member" value = "Yes">
             <label for = "yes"> Yes </label>
             <input type = "radio" id = "no" name = "member" value = "No">
@@ -133,7 +139,7 @@
                <option value = "30"> 30 </option>
                <option value = "31"> 31 </option>
               </select>
-              <label for = "viti"> Viti </label>
+              <label for = "viti"> Year </label>
               <select id = "muaji" name = "muaji">
                 <option value = "mbi '50"> 1950 - 1959 </option>
                 <option value = "mbi '60"> 1960 - 1969 </option>
@@ -259,7 +265,7 @@
       </div>
       <div class="container">
         <p> If you don't want to be registered, you can see other infos in this page because this is just for registration! 
-           The button down that says <u>Home</u> can help to send you to the HomePage to select something else to learn for our clinic.
+           The button down that says <i><b>Home</b></i> can help to send you to the HomePage to select something else to learn for our clinic.
         </p>
       </div>
         <br>
