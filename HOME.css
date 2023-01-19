@@ -624,8 +624,6 @@ svg{
     pointer-events: none;
   }
   
-
-  /* Drag and Drop Related Styling */
   
   .drag-start {
     opacity: 0.4;
@@ -649,12 +647,16 @@ svg{
 /*----------------------Rating Style---------------------*/
 
 .rating{
+    width: 47.5rem;
+    margin:0 15rem 0 15rem;
     background-color: rgb(209, 225, 209);
     color: #045;
     padding: 10px 30px 10px 30px;
     overflow: hidden;
     justify-content: center;
     display: flex;
+    border-style: dashed;
+    
 }
 
 .rating p{
