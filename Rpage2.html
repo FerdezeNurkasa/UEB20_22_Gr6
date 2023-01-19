@@ -44,12 +44,12 @@
             <input type = "radio" id = "no" name = "transport" value = "No">
             <label for = "no"> No </label><br>
         </form>
-        <img class="modalefekt" src = "images/transport for pwd.png" alt = "Transport for people with disabilities">
+        <img class="modalefekt" src = "images/transporttohelp.png" alt = "Transport for people with disabilities">
     </div>
     <div class = "col"> <label for = "disabilities"> What disabilities do you have: </label>
         <form>
             <label for = "disabilities"> Disabilities: </label>
-            <select id = "disabilities" name = "disabilities">
+            <datalist id = "disabilities" name = "disabilities">
                 <option value = "ADHD"> Attention Deficit Hyperactivity Disorder (ADHD) </option>
                 <option value = "physical"> Physical Disabilities </option>
                 <option value = "Learning Disabilities"> Learning Disabilities </option>
@@ -61,7 +61,8 @@
                 <option value = "Deaf and Hard of Hearing"> Deaf and Hard of Hearing </option>
                 <option value = "Concussion"> Concussion </option>
                 <option value = "Autism Spectrum Disorders"> Autism Spectrum Disorders </option>
-            </select>
+            </datalist>
+            <input type="text" id="disabilities" name="country" list="disabilities" autocomplete="on" />
         </form>
         <img class="modalefekt" src = "images/different disabilities.png" alt = " People with different disabilities ">
     </div>
@@ -94,37 +95,34 @@
   <div class="container">
     <h2 class = "offer"> THIS IS WHAT YOU WILL GET FROM OUR CLINIC </h2> 
         <div class = "row" >
-          <div class = "row">
-            <div class = "col text-center"> 
-              <img class="RowImagesShow" class="image" src = "images/hospitality.png" alt = "Great hospitality for people with disabilities">
-              <div class = "col text-center" class="middle">
-                <h3 class="text"> Great hospitality </h3>
+            <div class = "col text-center" id="DisplayHover"> 
+              <img class="RowImagesShow"  src = "images/hospitality.png" alt = "Great hospitality for people with disabilities">
+              <div class = "col text-center" class="middleText">
+                <h3 class="textHover"> Great hospitality </h3>
               </div> 
             </div>
 
-            <div class = "col text-center"> 
-              <img class="RowImagesShow" class="image" src = "images/transport.png" alt = "Transport for people with disabilities">
-              <div class = "col text-center" class="middle">
-                <h3 class="text"> Transport </h3>
+            <div class = "col text-center" id="DisplayHover"> 
+              <img class="RowImagesShow"   src = "images/transport.png" alt = "Transport for people with disabilities">
+              <div class = "col text-center" class="middleText">
+                <h3 class="textHover"> Transport </h3>
               </div> 
             </div>
 
-            <div class = "col text-center"> 
-              <img class="RowImagesShow" class="image" src = "images/education.jpg" alt = "Education for people with disabilities">
-              <div class="col text-center" class="middle">
-                <h3 class="text"> Learning and education </h3>
+            <div class = "col text-center" id="DisplayHover"> 
+              <img class="RowImagesShow"   src = "images/education.jpg" alt = "Education for people with disabilities">
+              <div class="col text-center" class="middleText">
+                <h3 class="textHover"> Learning and education </h3>
               </div> 
             </div>
 
-            <div class = "col text-center">
-              <img class="RowImagesShow" class="image" src = "images/healthandsupport.png" alt = "Health and support for people with disabilities"> 
-              <div class = "col text-center" class="middle">
-                <h3 class="text"> Health and support </h3>
+            <div class = "col text-center" id="DisplayHover">
+              <img class="RowImagesShow"  src = "images/healthandsupport.png" alt = "Health and support for people with disabilities"> 
+              <div class = "col text-center" class="middleText">
+                <h3 class="textHover"> Health and support </h3>
               </div>
             </div>
-          </div>            
-          </div> 
-        </div>
+        </div>            
   </div>      
         
   <div class = "container"><h4 class = "offer"> Some of our happy clients. We guarantee you incredible services that can help be one of them! </h4></div>
@@ -191,7 +189,7 @@
     <!-- Thumbnail images -->
     <div class="row">
       <div class="column">
-        <img class="demo cursor" src="images\sign language.png" style="width:100%" onclick="currentSlide(1)" alt="The llitle girl learning sign language">
+        <img class="demo cursor" src="images\sign language.png" style="width:100%" onclick="currentSlide(1)" alt="The little girl learning sign language">
       </div>
       <div class="column">
         <img class="demo cursor" src="images/client-1.png" style="width:100%" onclick="currentSlide(2)" alt="our aids taking care of a client">
