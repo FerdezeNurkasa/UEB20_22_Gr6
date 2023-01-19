@@ -5,6 +5,8 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+/*----------------------Header Style---------------------*/
+
 header{
     width: 100%;
     height: 70px;
@@ -160,6 +162,8 @@ header{
 
 }
 
+/*----------------------Hero Style---------------------*/
+
 .hero{
     position: relative;
     width: 100%;
@@ -226,6 +230,8 @@ header{
         margin-right: 10px;
     }
 }
+
+/*----------------------Info Style---------------------*/
 
 .Info-section{
     position: relative;
@@ -333,6 +339,8 @@ button:hover{
     }
    
 }
+
+/*----------------------Svg Style---------------------*/
 svg{
     width:250px;
     height:300px;
@@ -347,6 +355,8 @@ svg{
     padding-right: 5px;
   
 }
+
+/*----------------------Quote Style---------------------*/
 
 
 #container{
@@ -411,6 +421,8 @@ svg{
 	}
     
 }
+
+/*----------------------Consulation Style---------------------*/
 .consulation{
     position: relative;
     display: inline-block;
@@ -463,6 +475,8 @@ svg{
 }
 
 
+
+/*----------------------What Others Say Style---------------------*/
 .others{
     padding:40px 0;
     background:#fff;
@@ -524,6 +538,8 @@ svg{
     margin-bottom: 20px;
 }
 
+/*----------------------Rating Style---------------------*/
+
 .rating{
     background-color: rgb(209, 225, 209);
     color: #045;
@@ -549,6 +565,8 @@ svg{
 .rating button{
     margin-top:10px;
 }
+
+/*----------------------Footer Style---------------------*/
 
 footer{
     background-color: #f3eee7;
