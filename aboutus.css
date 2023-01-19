@@ -327,7 +327,7 @@ border-spacing: 90px;
 }
 
 .image-container_a {
-    margin-top: 100px;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -596,6 +596,26 @@ footer{
 }
 
 .center-div {
-    margin-top: 50px;
+    margin-top: -5%;
     text-align: center;
 }
+
+.transport_container {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 24px;
+    height: 500px;
+    background: none;
+}
+
+.transport_container
+.transport_main {
+    width: 100%;
+    background: url(images/transporti.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 350px;
+    text-align: center;
+    text-decoration: underline;
+}
+
