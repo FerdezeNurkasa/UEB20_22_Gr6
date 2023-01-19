@@ -526,6 +526,32 @@ svg{
     margin-bottom: 20px;
 }
 
+.rating{
+    background-color: rgb(209, 225, 209);
+    color: #045;
+    padding: 10px 30px 10px 30px;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+}
+
+.rating p{
+    padding:20px 20px 0 0;
+    font-size: 20px;
+}
+
+#demo{
+    margin: 20px 20px 0 0 ;
+    padding-left: 10px;
+    width: 10rem;
+    height: 2rem;
+   border-radius: 40px;
+}
+
+.rating button{
+    margin-top:10px;
+}
+
 footer{
     background-color: #f3eee7;
     cursor: pointer;
