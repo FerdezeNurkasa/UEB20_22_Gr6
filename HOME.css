@@ -38,7 +38,7 @@ header{
 
 .navigation-menu a{
     margin-right: 40px;
-    color: blue;
+    color: rgb(42, 42, 121);
     text-transform: uppercase;
     font-size:14px;
     padding: 10px 0px;
@@ -336,7 +336,7 @@ button:hover{
 svg{
     width:250px;
     height:300px;
-    fill:#d4e3f3; 
+    fill:#d4e3f3;
 
 }
 #svg1{
@@ -347,8 +347,6 @@ svg{
     padding-right: 5px;
   
 }
-
-
 
 
 #container{
