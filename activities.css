@@ -7,7 +7,6 @@
 
 header{
     width: 100%;
-    height: 70px;
     background: #d4e3f3;
     position: fixed;
     z-index: 99;
@@ -15,7 +14,7 @@ header{
 
 .navigation{
     max-width: 100%;
-    padding-right: 20px;
+    padding-right: 2%;
     margin:0;
 }
 
@@ -94,19 +93,19 @@ header{
 
 .search-box{
     position: relative;
-    top: 5px;
+    top: 0.5%;
     left: 2rem;
     right: 2rem;
     background:none;
     height: 40px;
     border-radius: 40px;
-    padding: 10px;
+    padding: 1%;
 
 }
 .search-box:hover > .search-txt{
     width: 4rem;
-    padding: 0 6px;
-    top: 50px;
+    padding: 0 0.6%;
+    top: 5%;
 }
 .search-box:hover > .search-btn{
    color: white;
@@ -136,7 +135,7 @@ header{
         top:90px;
         right: 0;
         display: none;
-        padding: 20px 40px;
+        padding: 2% 4%;
         box-sizing: border-box;
     }
 
@@ -146,14 +145,14 @@ header{
         border-right: 10px solid transparent;
         border-bottom: 10px solid red;
         position: absolute;
-        top: -10px;
-        right: 10px;
+        top: -1%;
+        right: 1%;
 
     }
 
     .navigation-menu a{
         display: block;
-        margin: 10px 0;
+        margin: 1% 0;
     }
 
     .navigation-menu.active{
@@ -192,7 +191,7 @@ body{
     box-sizing: border-box;
     justify-content: center;
 
-    margin-bottom: 50px;
+    margin-bottom: 5%;
     display: flex;
     
 }
@@ -200,14 +199,14 @@ body{
 .navbar{
     display:flex;
     justify-content: center;
-    margin: 5px;
+    margin: 0.5%;
    
 }
 
 h2{
     text-align:stars;
     font-family: cursive;
-    margin-top: 50px;
+    margin-top: 5%;
     font-size: 1cm;
     padding-top: 5%;
     margin-left: 20%;
@@ -235,8 +234,8 @@ nav ul li a{
 .popup-container{
     /*background-color: #d4e3f3;*/
     width: 600px;
-    padding: 20px;
-    margin: 5px;
+    padding: 2%;
+    margin: 0.5%;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,.3)
 }
@@ -279,23 +278,23 @@ nav ul li a{
     width: 230px;
     height: 200px;
     color-scheme: white;
-    margin: 5px 15px;
+    margin: 0.5% 1.5%;
     list-style-type: none;
     display: flex;
     font-size: 25px;
     font-family: cursive;
-    margin-top: 100px;
+    margin-top: 10%;
     box-sizing: border-box;
     border: solid 2px darkgray;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,.3);
     text-align:center;
 }
-
 table{
-    margin-top: 100px;
+    margin-top: 10%;
     text-align: center;
     border: 3px;
+    border-radius: 20px;
     width: 20cm;
     height: 5cm;
     margin-left: auto;
@@ -305,22 +304,28 @@ table{
 }
 
 h4{
-    font-size: 1.5cm;
+    font-size: 1cm;
     color: #84add9;
-    margin-top: 30px;
+    margin-top: 3%;
     text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 h3{
     font-size: 1cm;
-    margin-top: 50px;
+    margin-top: 5%;
     text-align: center;
 }
 
 h6{
-    font-size: 1.5cm;
+    font-size: 1cm;
     color: #84add9;
-    margin-top: 100px;
+    margin-top: 10%;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: underline;
 }
 
 h1{
@@ -333,7 +338,7 @@ h1{
 .container4{
     margin: 50px auto;
     width: 50%;
-    padding: 8px;
+    padding: 0.8%;
     font-size: 0.5cm;
 }
 
@@ -345,7 +350,7 @@ h1{
     align-items: center;
     flex-direction: column;
     gap: 15px;
-    margin-top: 30px;
+    margin-top: 3%;
 }
 
 .btn .play{
@@ -413,13 +418,13 @@ box-shadow: 0 15px 35px rgba(0,0,0,.3);
 
 .clip .close{
 position: absolute;
-top: 30px;
-right: 30px;
+top: 5%;
+right: 5%;
 cursor: pointer;
-font-weight: 500;
+font-weight: 500px;
 letter-spacing: 2px;
 text-transform: uppercase;
-color: #fff;
+color: rgb(38, 37, 37);
 }
 /*make it responsive*/
 @media (max-width: 991px)
@@ -481,11 +486,5 @@ footer{
 .name{
     font-size: 20px;
     text-transform: uppercase;
-    margin: 20px 0;
+    margin: 2% 0;
 }
-
-
-
-
-
-
