@@ -180,6 +180,8 @@ h1 {
     font-size: 20px;
     border-bottom: double #38a8bc;
     border-top: double #38a8bc;
+    border-left:double #38a8bc ;
+    border-right: double #38a8bc;
     color: #207284;
     padding: 5px;
 border-spacing: 90px;
@@ -618,4 +620,32 @@ footer{
     text-align: center;
     text-decoration: underline;
 }
+ 
+.comment-box{
+    width: 50%;
+    border: 1px solid  #0783bc;
+    margin: 50px 0;
+    padding: 10px 20px;
+    font-family: 'Poppins',sans-serif;
+    border-radius: 5px;
+    margin-left: 25%;
+    margin-top: 80px;
+    box-shadow: 0 0 10px 1px aliceblue;
+}
 
+.comment-box p{
+    text-align: left;
+    font-size: 28px;
+    color: #777;
+}
+
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    color: #777;
+}
