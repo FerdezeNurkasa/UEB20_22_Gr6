@@ -1,14 +1,175 @@
 *{
+    
     box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 70px;
+    background: #d4e3f3;
+    position: fixed;
+    z-index: 99;
+}
+
+.navigation{
+    max-width: 100%;
+    padding-right: 20px;
+    margin:0;
+}
+
+.logo{
+    float: left;
+    padding: 5px 0 0 30px;
+    
+}
+
+.logo img{
+    height: 70px;
+}
+
+.navigation-menu{
+    float:right;
+    display:flex;
+    align-items: center;
+    min-height: 70px;
+}
+
+.navigation-menu a{
+    margin-right: 40px;
+    color: blue;
+    text-transform: uppercase;
+    font-size:14px;
+    padding: 10px 0px;
+    border-radius: 4px;
+    transition: .3s linear;
+}
+
+.navigation-menu a:hover{
+    background: #fff;
+    color: blue;
+    transform: scale(0.8);
+}
+
+.navigation-menu i{
+    margin-left: 60px;
+    font-size: 16px;
+}
+
+.home{
+    color:#92ef84;
+
+}
+
+.about{
+    color:#92ef84;
+
+}
+
+.activities{
+    color:#92ef84;
+
+}
+
+.contact{
+    color:#92ef84;
+
+}
+
+.menu-toggle-btn{
+    float: right;
+    height: 90px;
+    line-height: 90px !important;
+    color: #fff;
+    font-size: 26px;
+    display: none !important;
+    cursor: pointer;
+}
+
+
+
+.search-box{
+    position: relative;
+    top: 5px;
+    left: 2rem;
+    right: 2rem;
+    background:none;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+.search-box:hover > .search-txt{
+    width: 4rem;
+    padding: 0 6px;
+    top: 50px;
+}
+.search-box:hover > .search-btn{
+   color: white;
+     }
+
+.search-txt{
+ border: none;
+ background: none;
+ outline: none;
+ float: left;
+ padding: 0;
+ color: rgb(66, 61, 139);
+ font-size: 16px;   
+ width: 0px;
+}
+ 
+@media screen and (max-width:760px) {
+    .menu-toggle-btn{
+        display: block !important;
+    }
+
+    .navigation-menu{
+        position:fixed;
+        width: 100%;
+        max-width: 400px;
+        background: #7c9bd1;
+        top:90px;
+        right: 0;
+        display: none;
+        padding: 20px 40px;
+        box-sizing: border-box;
+    }
+
+    .navigation-menu::before{
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid red;
+        position: absolute;
+        top: -10px;
+        right: 10px;
+
+    }
+
+    .navigation-menu a{
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navigation-menu.active{
+        display: block;
+        position: fixed;
+    }
+
 }
 
 .ferdeza {
+   
     margin-top: 10px;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
     text-align: center;
     color: white;
-    background-size: 600px;
+    padding: 100px;
 }
 
 h1 {
@@ -21,6 +182,7 @@ h1 {
     border-top: double #38a8bc;
     color: #207284;
     padding: 5px;
+border-spacing: 90px;
 }
 
 #time {
@@ -28,7 +190,7 @@ h1 {
     border: double 1px #38a8bc;
     padding: 5px;
     color: black;
-    margin-top: 40px;
+    margin-top: 50px;
     float: right;
     margin-right: 30px;
 }
@@ -36,6 +198,7 @@ h1 {
 #greeting{
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 .section_s {
@@ -164,7 +327,7 @@ h1 {
 }
 
 .image-container_a {
-    margin-top: 100px;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -407,3 +570,52 @@ footer{
     color: black;
     letter-spacing: 2px;
 }
+
+.box4 {
+    width: 95%;
+    height: fit-content;
+    display: inline-block;
+    margin: 1% 2%;
+    padding: 5px;
+    color: rgb(30, 128, 147);
+}
+
+.box4 p {
+    background: aliceblue;
+}
+.box41, .box42, .box43 {
+    width: 340px;
+    height: 200px;
+    margin: 5px 1% 0 1%;
+    padding: 3px 10px;
+    text-align: center;
+    border-radius: 10px;
+    float: left;
+    background: aliceblue;
+    box-shadow:#38a8bc ;
+}
+
+.center-div {
+    margin-top: -5%;
+    text-align: center;
+}
+
+.transport_container {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 24px;
+    height: 500px;
+    background: none;
+}
+
+.transport_container
+.transport_main {
+    width: 100%;
+    background: url(images/transporti.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 350px;
+    text-align: center;
+    text-decoration: underline;
+}
+
