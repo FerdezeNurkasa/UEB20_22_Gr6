@@ -335,6 +335,7 @@ h1{
     justify-content: center;
     letter-spacing: 0.5rem;
 }
+
 .container4{
     margin: 50px auto;
     width: 50%;
@@ -404,11 +405,13 @@ h1{
     transition: 0.5s;
 
 }
+
 .clip.active{
     transition-delay: 0.5s;
     transform: translate(-50% , -50%) scale(1);
 
 }
+
 .clip video{
 max-width: 900px;
 outline: none;
@@ -488,28 +491,10 @@ footer{
     text-transform: uppercase;
     margin: 2% 0;
 }
-#div1, #div2 {
-    float: left;
-    width: 100px;
-    height: 35px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
-  }
-
-h9{
-    text-align:left;
-    font-family: cursive;
-    font-size: 18px;
-    margin-left: 5px;
-
-}
 
 img{
     width:18cm;
     height: 10cm;
    float: left;
    margin-top: 5px;
-
-
 }
