@@ -55,16 +55,16 @@ close.onclick = function(){
 }
 
 
-function allowDrop(even) {
-    even.preventDefault();
-}
-
-function drag(even) {
-    even.dataTransfer.setData("text", even.target.id);
-}
-
-function drop(even) {
-    even.preventDefault();
-    var fetchData = even.dataTransfer.getData("text");
-    even.target.appendChild(document.getElementById(fetchData));
-}
+function allowDrop(ev) {
+    ev.preventDefault();
+  }
+  
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+  
+  function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
