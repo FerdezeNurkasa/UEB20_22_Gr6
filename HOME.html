@@ -24,8 +24,8 @@
                 <a href="HOME.html"><i class="fa-sharp fa-solid fa-house home"></i>Home</a>
                 <a href="aboutus.html"><i class="fa-sharp fa-solid fa-list about"></i>About us</a>
                 <a href="activities.html"><i class="fa-sharp fa-solid fa-layer-group activities"></i>Activities</a>
-                <a href="Registration.html"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Contact Us</a>
                 <a href="ourteam.html"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Our Team</a>
+                <a href="Registration.html"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Contact Us</a>
                 <a class="search-box">
                     <input class="search-txt" type="text" placeholder="search">
                     <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
@@ -57,9 +57,9 @@
                 <li>Research benefits for disability people</li>
                 <li>Transport</li>
             </ol>
-           <a href="aboutus.html">
+            <a href="aboutus.html">
                <button type="button" >Read more</button>
-           </a>
+            </a>
 
         </div>
 
@@ -166,7 +166,8 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>A clinic filled with care, love and everything else you need</p>
+                    <p>A clinic filled with care, love, support, happiness, joy, precision and everything
+                       else you need.</p>
                 </div>
             </div>
 
@@ -181,7 +182,8 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <p>Cleanliness, Doctors treatment/advice, are good. Overall good experience, the treatment was good and very helpful staff.</p>
+                    <p>Cleanliness, Doctors treatment/advice, are good. Overall good experience,
+                       the treatment was good and very helpful staff.</p>
                 </div>
             </div>
 
@@ -196,7 +198,8 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>I am fully satisfied with the services rendered to the patient. The hospital staf are very courteous and cooperative and helpful.</p>
+                    <p>I am fully satisfied with the services rendered to the patient. The hospital staf are very
+                       courteous and cooperative and helpful.</p>
                 </div>
             </div>
         </div>
@@ -204,14 +207,14 @@
 </section>
 
 <!--------------Rating------------------------------>
-<div class="Rating">
-<p >Rate this information from 1 - 10:</p>
+    <div class="Rating">
+        <p >Rate this information from 1 - 10:</p>
 
-<input id="demo" type="text" placeholder="Input your number">
-<button type="button" onclick="myFunction()" >Rate</button>
-<p id="p01"></p>
+        <input id="demo" type="text" placeholder="Input your number">
+        <button type="button" onclick="myFunction()" >Rate</button>
+        <p id="p01"></p>
 
-</div>
+    </div>
 
 
 
@@ -270,7 +273,7 @@
         </div>
     </footer>
 
-
+<!-----------------navigation-menu---------------------->
     <script type="text/javascript">
         $(".menu-toggle-btn").click(function(){
             $(this).toggleClass("fa-times");
@@ -278,23 +281,23 @@
         });
     </script>
 
-<!----------Rating error------------>
-<script>
-    function myFunction() {
-      const message = document.getElementById("p01");
-      message.innerHTML = "";
-      let x = document.getElementById("demo").value;
-      try {
-        if(x.trim() == "") throw "empty";
-        if(isNaN(x)) throw "not a number";
-        x = Number(x);
-        if(x < 1) throw " only from 1-10!";
-        if(x > 10) throw " only from 1-10!";
-      }
-      catch(err) {
-        message.innerHTML = "  Input is " + err;
-      }
-    }
+<!----------------------Rating error-------------------->
+    <script>
+        function myFunction() {
+          const message = document.getElementById("p01");
+          message.innerHTML = "";
+          let x = document.getElementById("demo").value;
+          try {
+            if(x.trim() == "") throw "empty";
+            if(isNaN(x)) throw "not a number";
+            x = Number(x);
+            if(x < 1) throw " only from 1-10!";
+            if(x > 10) throw " only from 1-10!";
+          }
+          catch(err) {
+            message.innerHTML = "  Input is " + err;
+          }
+        }
     </script>
 
 
