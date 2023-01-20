@@ -4,6 +4,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+/*Navigation*/
 header{
     margin:0;
     padding:0;
@@ -88,8 +89,6 @@ header{
     cursor: pointer;
 }
 
-
-
 .search-box{
     position: relative;
     top: 5px;
@@ -101,11 +100,12 @@ header{
     padding: 10px;
 
 }
-.search-box:hover > .search-txt{
+/*.search-box:hover > .search-txt{
     width: 4rem;
     padding: 0 6px;
     top: 50px;
-}
+}*/
+
 .search-box:hover > .search-btn{
    color: white;
      }
@@ -161,8 +161,8 @@ header{
 
 }
 
+/*time and greeting part*/
 .ferdeza {
-   
     margin-top: 10px;
     margin: 0;
     padding: 0;
@@ -202,6 +202,7 @@ border-spacing: 90px;
 
 }
 
+/*Qoute, what our clinic offer*/
 .section_s {
     position: relative;
     width: 100%;
@@ -290,6 +291,7 @@ border-spacing: 90px;
     max-width: 400px;
 }
 
+/*Home photos*/
 .fotoja {
     background-size: 100px;
     background-repeat: repeat-x;
@@ -299,6 +301,7 @@ border-spacing: 90px;
     padding: 4em;
 }
 
+/*History of our clinic*/
 .about-section{
     background-size: 55%;
     background-color:  #d4e3f3;
@@ -314,6 +317,10 @@ border-spacing: 90px;
     padding: 100px;
 }
 
+.inner-container h1{
+    background-color: antiquewhite;
+} 
+
 .text{
     font-size: 20px;
     color: #0b9aba;
@@ -324,6 +331,7 @@ border-spacing: 90px;
     background-color:  #d4e3f3;
 }
 
+/*Founders*/
 .image-container_a {
     margin-top: 10%;
     display: flex;
@@ -419,10 +427,7 @@ section{
     position: relative;
 }
 
-.inner-container h1{
-    background-color: antiquewhite;
-}
-
+/*Benefits*/
 .benefits-section {
     padding: 40px 20px;
     margin-bottom: 80px;
@@ -437,25 +442,8 @@ section{
     width: 100%;
 }
 
-tbody{
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
-}
-
-tr{
-    display: table-row;
-    vertical-align: inherit;
-border-color: inherit;
-}
-
 .benefits-table th{
     text-align: center;
-}
-
-table th{
-    width: 50%;
-    background: #d4e3f3;
 }
 
 .benefits-table .benefits {
@@ -481,6 +469,24 @@ table th{
     background:  #d4e3f3;
 }
 
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr{
+    display: table-row;
+    vertical-align: inherit;
+border-color: inherit;
+}
+
+table th{
+    width: 50%;
+    background: #d4e3f3;
+}
+
+/*Our focus is our clients*/
 .client-text {
     margin-left:120px;
     font-size: 50px;
@@ -496,6 +502,11 @@ table th{
     transition:0.5s ease-out;
 }
 
+.ta2 tr td {
+    text-align:center;
+    font-family: 'Poppins',sans-serif;
+}
+
 table {
     display: table;
     border-collapse: separate;
@@ -507,63 +518,7 @@ table {
     background: linear-gradient(45deg, #57b1d88f, #64a6d8);
 }
 
-.ta2 tr td {
-    text-align:center;
-    font-family: 'Poppins',sans-serif;
-}
-
-
-
-.header{
-    padding-top: 2rem;
-    padding-bottom:2rem;
-    padding-right: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: var(--whatweoffer);
-    position: sticky;
-    top: 10;
-    left: 0;
-    right: 0px;
-    z-index: 800;
-}
-
-
-.header .logo img{
-   padding-left: 20px;
-   width: 150px;
-   height: 10px;
-    
-}
-
-
-.header .navbar a{
-    font-size:2rem;
-    font-weight: 500;
-    margin-left: 2rem;
-    color:var(--text);
-    margin-right: 2rem;
-
-
-}
-.header .navbar a:hover{
-    color:var(--activities);
-    text-decoration-line: underline;
-
-}
-
-
-footer{
-    background-color: #f3eee7;
-    cursor: pointer;
-}
-
-.phone{
-    color: black;
-    letter-spacing: 2px;
-}
-
+/*Pricing plans*/
 .box4 {
     width: 95%;
     height: fit-content;
@@ -589,14 +544,7 @@ footer{
     box-shadow:#38a8bc ;
 }
 
-
-.center-div {
-    margin-top: -5%;
-    text-align: center;
-}
-
-
-
+/*Transportation*/
 .transport_main {
     width: 100%;
     background-size: cover;
@@ -604,14 +552,17 @@ footer{
     height: 350px;
     text-align: center;
     text-decoration: underline;
-}
- 
-
-h3 {
-    font-size: 25px;
-    color: black;
+    word-wrap: break-word;
+    border: 2px solid rgb(54, 154, 174);
 }
 
+/*Audio*/
+.center-div {
+    margin-top: -5%;
+    text-align: center;
+}
+
+/*Forma*/
 .glyphicon-pencil {
     font-size: 35px;
     color: white;
@@ -643,5 +594,19 @@ h3 {
     color: white;
 }
 
+h3 {
+    font-size: 25px;
+    color: black;
+}
 
+/*Footer*/
+footer{
+    background-color: #f3eee7;
+    cursor: pointer;
+}
+
+.phone{
+    color: black;
+    letter-spacing: 2px;
+}
 

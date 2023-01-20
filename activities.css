@@ -3,6 +3,7 @@
     padding:0;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
 }
 
 header{
@@ -211,9 +212,13 @@ h1{
     justify-content: center;
     letter-spacing: 0.5rem;
 }
+<<<<<<< HEAD
 
 /*The divider under the h1*/
 .divider{
+=======
+/*.divider{
+>>>>>>> aa6a8d34989136fad87cbefe51c72eaf0ee15908
     width: 44cm;
     height: 5px;
     background-color: #5699e0;
@@ -223,7 +228,17 @@ h1{
     position:relative;
     top: 50%;
     left: 50%;
+<<<<<<< HEAD
     transform: translate(-50% , -50%)
+=======
+    transform: translate(-50% , -50%) 
+ } */
+.divider{
+    padding: 2%;
+    text-align: center;
+    background-color: #5699e0;
+
+>>>>>>> aa6a8d34989136fad87cbefe51c72eaf0ee15908
 }
 
 /*The list of our activities*/
@@ -269,7 +284,11 @@ table{
     text-align: center;
     border-radius: 20px;
     font-size: 1cm;
+<<<<<<< HEAD
     color: lightseagreen;
+=======
+    color: #5699e0;
+>>>>>>> aa6a8d34989136fad87cbefe51c72eaf0ee15908
     width: 20cm;
     height: 5cm;
     margin-left: auto;

@@ -46,7 +46,7 @@
                <div class="col border pt-0">
                   <div class="row mb-2"> 
                      <div class="col"> 
-                     <h2> Registration should be done here! </h2>
+                     <h2 class="offer"> Registration should be done here! </h2>
                      </div>
                   </div>
                   <form action="#">
@@ -107,10 +107,10 @@
                         </div>
                      </div>
                      <div class="row mb-2">
-                        <div class="col-7">
+                        <div class="col-6">
                            <label for = "member" > Are you a member of any other organizations? </label>
                         </div>
-                        <div class="col-5">
+                        <div class="col-6">
                            <input type = "radio" id = "yes" name = "member" value = "Yes">
                            <label for = "yes"> Yes </label>
                            <input type = "radio" id = "no" name = "member" value = "No">
@@ -189,7 +189,7 @@
                <tr>
                   <td> Client 5 </td>
                   <td> 5 years </td>
-                  <td> This is my home </td>
+                  <td id="demo"> This is my home </td>
                   <td class="star">
                      <span id="rating-5" name="rating" value="5" class="fas fa fa-star checked"></span>
                      <span id="rating-4" name="rating" value="4" class="fas fa fa-star checked"></span>
@@ -237,9 +237,8 @@
             </table>
          </div>
          <div class="container">
-         <p>If you don't want to be registered, you can see something else because this is just for registration! Above is the navigation part where you can go to the main 
-            <i><b>Home</b></i> page and see something else about us.
-         </p>
+         <p class="offer" >This page is just for registration, so if you don't want to get registered, above is the navigation part where you can go to the main 
+            <i><b>Home</b></i> page and see something else about us.<p>
          </div>
       </div>
       <!--------------------Footer--------------------->
@@ -296,8 +295,13 @@
              $(this).toggleClass("fa-times");
              $(".navigation-menu").toggleClass("active");
          });
-
-       
       </script>
+
+      <script>
+ let text = document.getElementById("demo").innerHTML; 
+document.getElementById("demo").innerHTML = text.replace("home", "favorite place");
+</script>
+      </script>
+
    </body>
 </html>

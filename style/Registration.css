@@ -353,6 +353,7 @@ h2#colorbackground{
 /* for the table - rating*/
 .ratingtext{
   text-align: center;
+  background-color: lightskyblue;
 }
 
 th{
