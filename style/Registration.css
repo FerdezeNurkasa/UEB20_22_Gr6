@@ -3,20 +3,11 @@
   padding:0;
   text-decoration: none;
   font-family: 'Times New Roman', Times, serif;
-  background-image: url("");
+  box-sizing: border-box;
 }
 
 
 /*--  faqja pare  --*/
-body, html {
-    height: 100%;
-    width: 100%;
-}
-
-body{
-    min-width: 100%;
-}
-
 header{
   width: 100%;
   height: 70px;
@@ -111,6 +102,7 @@ header{
   border-radius: 40px;
   padding: 10px;
 }
+
 .search-box:hover > .search-txt{
   width: 4rem;
   padding: 0 6px;
@@ -219,7 +211,7 @@ header{
 }
 
 .nextbutton a:after {
-  content: '\00bb';
+  content: '\00bb'; /* shenja e shigjetes */
   position: absolute;
   opacity: 0;
   top: 0;
@@ -238,7 +230,6 @@ header{
 
 h2{
     text-align: center;
-    margin-top: 50px;
 }
 
 h2#colorbackground{
@@ -246,58 +237,9 @@ h2#colorbackground{
   text-align: center center;
 }
 
-h1.tekstinefig{
-    text-align: top center;
-    padding-left: 50%;
-    padding-right: 50%;
-    top: 100%;
-    text-transform: uppercase;
-    margin: 0;
-    white-space: nowrap;
-    color: black;
-    position: absolute;
-    opacity: 0.7;
-}
-.modalefekt{
-  width: 80%;
-  height: 70%;
-  margin-top: 3%;
-}
- 
-/* .row{
-    margin-bottom: 50px;
-    margin: 10px;
-    width: 30px;
-    height: 30px;
-} */
-
-.portrait{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    display: block;
-    width: 250px;
-    height: 250px;
-    border-radius: 180px;
-    transition: transform .5s; /* Animation */
-}
-
-
-.portrait:hover {
-  transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-.marginbox{
-    margin-top: 1%;
-}
-
-#marginright.marginbox{
-    text-align: center;
-    margin-right: 20%;
-}
 
 .border{
-    width: 45%;
+  width: 45%;
     height: 40%;
     margin: auto;
     margin-top: 1%;
@@ -318,131 +260,113 @@ h1.tekstinefig{
   margin-top: 3%;
 }
 
-/* for gallery slideshow*/
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
-    position: relative;
-    text-align: center;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: #92ef84;
-    opacity: 0.7;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
 
-  .prev{
-    left: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: #92ef84;
-    opacity: 0.9;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #92ef84;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* ten columns side by side */
-  .column {
-    float: left;
-    width: 10%;
-    margin-bottom: 5%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  text-align: center;
+}
 
-  /* for the table - rating*/
-  .ratingtext{
-    text-align: center;
-    background-color: lightskyblue;
-  }
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #92ef84;
+  opacity: 0.7;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+  /* Position the "prev button" to the left */
+.prev{
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #92ef84;
+  opacity: 0.9;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: white;
+  background-color: #92ef84;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #92ef84;
+  padding: 2px 16px;
+  color: white;
+}
+
+
+/* ten columns side by side */
+.column {
+  float: left;
+  width: 10%;
+  margin-bottom: 3%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* for the table - rating*/
+.ratingtext{
+  text-align: center;
+  background-color: lightskyblue;
+}
+
+th{
+  background-color: lightskyblue;  
+}
 
 #rating {
-   unicode-bidi: bidi-override;
-   display: inline-block;
-   text-rendering: auto;
+  unicode-bidi: bidi-override;
+  display: inline-block;
+  text-rendering: auto;
    align-items: center;
 }
 
-#rating input {
-    display: none;
-}
-
-#rating label {
-    color: #ddd; 
-}
-
-#rating:hover label {
-    color: #ffc107; 
-}
-
-#rating label:hover ~ label {
-    color: #ddd;
-}
 
 .stilitabeles{
     box-sizing: border-box;
@@ -451,21 +375,18 @@ h1.tekstinefig{
 }
  
 table, th, td {
-    border: 1px solid white;
+    border: 2px solid black;
     border-collapse: collapse;
     padding: 10px;
 }
 
-th, td {
-  background-color: lightskyblue;
-}
 
 .checked{
     color:  #ffc107;
-}
+  }
 
-footer{
-  background-color: #f3eee7;
+  footer{
+    background-color: #f3eee7;
   cursor: pointer;
 }
 
@@ -474,12 +395,6 @@ footer{
   letter-spacing: 2px;
 }
 
-/* .image {
-  opacity: 1;
-  display: block;
-  transition: .5s ease;
-  backface-visibility: hidden;
-} */
 
 .DisplayHover{
   position: relative;
@@ -521,29 +436,14 @@ footer{
   font-size: 16px;
   padding: 16px 32px;
 }
-
-#submit{
-  margin: auto;
-  margin-left: 50%;
-  margin-right: 25%;
-  margin-top: 5%;
-  color: lightskyblue;
-  padding: 1% 2%;
-  text-align: center;
-  transition: 0.3s;
-  border-color: white;
-}
-
-#submit:hover {
-  background-color: #92ef84;
-  color: lightseagreen;
-}
-
+ 
 
 .modalefekt{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
+  width: 80%;
+  height: 70%;
+  margin-top: 3%;
   display: block;
   transition: transform .5s; /* Animation */
 }
@@ -555,16 +455,15 @@ footer{
 /* For the map */
 .mapouter{
   position: relative;
-  text-align:right;
-  height:500px;
-  width:600px;
+  height: 400%;
+  width: 100%;
   margin: auto;
   margin-bottom: 3%;
 }
 
-.gmap_canvas{
+#gmap_canvas{
   overflow:hidden;
-  background:none!important;
-  height:500px;
-  width:600px;
+  background: none!important;
+  height: 400%;
+  width: 100%;
 }

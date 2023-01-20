@@ -167,12 +167,15 @@ body{
     "https://i.pinimg.com/originals/63/65/fb/6365fb5823ca5602292b3d79a9202f11.jpg");
     background-repeat:no-repeat;
     background-position-x: center;
+    background-color: rgb(242, 247, 252);
+    overflow-x: hidden;
 
 }
 
 .bg-image{
     width: 50cm;
     height: 30cm;
+    background-size: cover;
     background-image: url(
 "https://media.istockphoto.com/id/1244524439/photo/welfare-support-concept-caregiver-carer.jpg?s=612x612&w=0&k=20&c=8yjfo-zzawqv391umwAwq5InOMcHCqga1upprzy69fQ=");
     background-position: center;
@@ -190,12 +193,12 @@ body{
 .container3{
     box-sizing: border-box;
     justify-content: center;
-
     margin-bottom: 5%;
     display: flex;
     
 }
 
+/*The navbar style*/
 .navbar{
     display:flex;
     justify-content: center;
@@ -203,14 +206,17 @@ body{
    
 }
 
-h2{
-    text-align:stars;
-    font-family: cursive;
-    margin-top: 5%;
-    font-size: 1cm;
-    padding-top: 5%;
-    margin-left: 20%;
+/*Our team activities style*/
+h1{
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.5cm;
+    color:rgb(119, 193, 168);
+    justify-content: center;
+    letter-spacing: 0.5rem;
 }
+
+/*The divider under the h1*/
 .divider{
     width: 44cm;
     height: 5px;
@@ -222,56 +228,23 @@ h2{
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%)
- 
-   
 }
+
+/*The list of our activities*/
 nav ul li{
     display:block;
 }
 nav ul li a{
     font-size: 20px;
 }
-.popup-container{
-    /*background-color: #d4e3f3;*/
-    width: 600px;
-    padding: 2%;
-    margin: 0.5%;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,.3)
-}
-
-.textarea{
-    resize:none;
-    width: 100%;
-    height: 100px;
-    font-size: 18px;
-    font-family: sans-serif;
-    padding: 10px;
-    box-sizing: border-box;
-    border: solid 2px darkgray;
-}
-.counter-container{
-    
-    display: flex;
-    justify-content: space-between;
-    padding: 0 5px;
-}
-.counter-conatiner p{
-    font-size: 18px;
-    color: gray;
-}
-.total-counter{
-    color: slateblue;
-}
-.remaining-counter{
-    color: orangered;
-}
 
 .container2{
+    margin-top: 0;
     display: flex;
     justify-content: center;
     
 }
+
 
 .color-container2{
     background-color: #dfedfb;
@@ -283,26 +256,46 @@ nav ul li a{
     display: flex;
     font-size: 25px;
     font-family: cursive;
-    margin-top: 10%;
+    margin-top: 20px;
     box-sizing: border-box;
     border: solid 2px darkgray;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,.3);
     text-align:center;
 }
+
+/*For the pages in ul list*/
+img{
+    width:18cm;
+    height: 10cm;
+   float: left;
+   margin-top: 5px;
+}
+.container4{
+    margin: 50px auto;
+    width: 50%;
+    padding: 8px;
+    font-size: 0.5cm;
+}
+
+/*Table*/
 table{
-    margin-top: 10%;
+    margin-top: 2%;
     text-align: center;
     border-radius: 20px;
     font-size: 1cm;
+    color: lightseagreen;
     width: 20cm;
     height: 5cm;
     margin-left: auto;
     margin-right: auto;
     border-color: #5699e0;
     background-color: #dfedfb;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3)
 }
 
+/*The text that tells to watch video below*/
 h4{
     font-size: 1cm;
     color: #84add9;
@@ -312,37 +305,10 @@ h4{
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-h3{
-    font-size: 1cm;
-    margin-top: 5%;
-    text-align: center;
-}
 
-h6{
-    font-size: 1cm;
-    color: #84add9;
-    margin-top: 10%;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration: underline;
-}
 
-h1{
-    text-align: center;
-    font-size: 1.5cm;
-    color:rgb(119, 193, 168);
-    justify-content: center;
-    letter-spacing: 0.5rem;
-}
-
-.container4{
-    margin: 50px auto;
-    width: 50%;
-    padding: 0.8%;
-    font-size: 0.5cm;
-}
-
+       /*Video*/
+/*The btn and play video*/
 .btn{
     position: relative;
     cursor: pointer;
@@ -438,6 +404,23 @@ color: rgb(38, 37, 37);
     }
 }
 
+/*This heading contain the play video*/
+h3{
+    font-size: 1cm;
+    margin-top: 5%;
+    text-align: center;
+}
+
+/*The heading which tells us to show photos*/
+h6{
+    font-size: 1cm;
+    color: #84add9;
+    margin-top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
 
 /* Slideshow container */
 
@@ -452,7 +435,8 @@ color: rgb(38, 37, 37);
     background-image: 
 url("https://media.istockphoto.com/id/984878838/photo/a-boy-in-wheelchair-with-teenager-friends-outside-playing-basketball.jpg?s=612x612&w=0&k=20&c=aL2zbVQVFXk6c5gBaEfGBROJUY5Qs_YUop57DMhCbRk=");
    background-size: 100% 100%;
-   box-shadow: 1px 2px 10px 10px white;
+   box-shadow: 1px 2px 10px 10px rgb(211, 205, 205);
+   border-radius: 20px;
    animation: slider 10s infinite linear;
 }
 
@@ -468,7 +452,57 @@ url("https://raisingchildren.net.au/__data/assets/image/0013/108130/Physical-act
 }
 
 
+/*The audio where to place*/
+.center-div {
+    margin-top: -10%;
+    text-align: center;
+}
 
+/*The place where we write the comment*/
+.container3{
+    box-sizing: border-box;
+    justify-content: center;
+    margin-bottom: 5%;
+    display: flex;
+}
+
+.popup-container{
+    /*background-color: #d4e3f3;*/
+    width: 600px;
+    padding: 2%;
+    margin: 0.5%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3)
+}
+
+.textarea{
+    resize:none;
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 2px darkgray;
+}
+.counter-container{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+.counter-conatiner p{
+    font-size: 18px;
+    color: gray;
+}
+.total-counter{
+    color: slateblue;
+}
+.remaining-counter{
+    color: orangered;
+}
+
+/*Footer*/
 footer{
     background-color: #f3eee7;
     cursor: pointer;
@@ -485,16 +519,10 @@ footer{
     justify-content: center;
 }
 
-
 .name{
     font-size: 20px;
     text-transform: uppercase;
     margin: 2% 0;
 }
 
-img{
-    width:18cm;
-    height: 10cm;
-   float: left;
-   margin-top: 5px;
-}
+

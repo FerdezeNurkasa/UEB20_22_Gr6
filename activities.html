@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
    <link rel = "stylesheet" href = "activities.css">    
    <title>Activities</title>
    
-   
-  
 </head>
+
 <body> 
     <!------Header------>
     <header>
         <div class="navigation">
-            <a href="#" class="logo"><img src="C:\Users\User\Documents\GitHub\UEB20_22_Gr7\images\Logo.png"
-                 alt="Logo"></a>
+            <a href="#" class="logo"><img src="images\Logo.png" alt="Logo"></a>
             <i class="menu-toggle-btn fas fa-bars"></i>
             <nav class="navigation-menu">
                 <a href="HOME.html"><i class="fa-sharp fa-solid fa-house home"></i>Home</a>
                 <a href="aboutus.html"><i class="fa-sharp fa-solid fa-list about"></i>About us</a>
                 <a href="activities.html"><i class="fa-sharp fa-solid fa-layer-group activities"></i>Activities</a>
-                <a href="Registration.html"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Contact Us</a>
                 <a href="ourteam.html"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Our Team</a>
+                <a href="Registration.html"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Register Now</a>
                 <a class="search-box">
                     <input class="search-txt" type="text" placeholder="search">
                     <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
@@ -45,6 +43,7 @@
        <!--------Navbar----->
         <span class="divider"></span>
         <div class="navbar active">
+            <!----List where we refer to access other pages-->
             <ul>
         <div class="container2">
            <div class="color-container2"><li>
@@ -68,48 +67,73 @@
         </div>
     </ul>
 </div>
-
+      <!--Table-->
  <table>
             <tr>
-               <td rowspan="2">Support</td>
-               <td>Belive</td>
-               <td rowspan="3">Challenge</td>
+               <td rowspan="3"><svg height="100" width="400">
+                <text x="40" y="15" fill="rgb(54, 154, 174)" transform="rotate(30 20,40)" style="text-shadow: 2px 4px 4px rgb(54, 154, 174);">Trust</text>
+              </svg></td>
+               <td rowspan="3">
+                <svg height="100" width="400">
+                    <text x="20" y="25" fill="rgb(54, 154, 174)" style="text-shadow: 2px 4px 4px rgb(54, 154, 174);">Be happy</text>
+                  </svg>
+              </td>
             </tr>
+
             <tr>
-                <td>Keep going</td>  
+                <td colspan="2"><svg height="60" width="200">
+                    <text x="10" y="25" fill="rgb(54, 154, 174)" style="text-shadow: 2px 4px 4px rgb(54, 154, 174);">Help</text>
+                  </svg></td>  
             </tr>
+
             <tr>
-               <td colspan="2">You're not alone</td>
+               <td colspan="1"><svg height="100" width="400">
+                <text x="40" y="15" fill="rgb(54, 154, 174)" transform="rotate(30 20,40)" style="text-shadow: 2px 4px 4px rgb(54, 154, 174);">Believe</text>
+              </svg></td>
             </tr>
+
             <tr>
-                <td colspan="3">Trust</td>
+                <td colspan="3"><svg height="60" width="300">
+                    <text x="10" y="25" fill="rgb(54, 154, 174)" style="text-shadow: 2px 4px 4px rgb(54, 154, 174);">You're not alone</text>
+                  </svg>
+                </td>
             </tr>
-         </table> 
+ </table> 
+
+         <!--Video and play button-->
         <h4>Watch a video to show our activities...</h4>
         <div class="btn">
              
             <div class="play"></div>
          
-        </div>
+    </div>
         <div class="clip">
         <video src="https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcQOhcmaFVjITbtnCf6x9Jw6E4M1Uvega23dqg" 
         controls></video>
-        <b class="close">Close!</b>
-         
+        <b class="close">Close!</b>  
     </div> 
       <h3>Play the video!</h3>
-        <h6>Show some photos...</h6>
-
-        <div class="maindiv"></div>
        
+      <h6>Show some photos...</h6>
+
+       <!--Maindiv for slideshow photos-->
+        <div class="maindiv"></div>
+
+        <!--Audio-->
+    <div class="center-div">
+            <audio src="11-article-6-women-with.mp3" controls></audio>
+    </div>
+
+          <!--Container3 where we write our comment-->
   <div class="container3">
         <div class="popup-container">
         <h2>Any comment about activities of our team?</h2>
         <textarea id="textarea" class="textarea" 
         placeholder="Write your comment here..." 
         maxlength="50"></textarea>
-    <button class="popup-btn">Finish</button>
-    
+    <form>
+        <input type="submit" value="Submit">
+    </form>
     <div class="counter-container">
             <p>
                 Total characters:
@@ -123,6 +147,7 @@
      </div>
     </div>
     
+                  <!--Footer-->
     <footer class="text-dark pt-2 pb-1">
         <div class="container text-center text-md-left">
             <div class="row text-center text-md-left">
@@ -140,7 +165,6 @@
                     </p>
                 </div>
 
-               
                 <hr class="mb-2">
                 <div class="row d-flex justify-content-center">
                 <div>
@@ -155,25 +179,24 @@
             <div class="row d-flex justify-content-center">
                 <div class="text-center">
                     <ul class="list-unstyled list-inline">
-                        <li class="list-inline-item">
-                            <a href="#" class="text-dark"><li class="fab fa-facebook"></li></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="text-dark"><li class="fab fa-twitter"></li></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="text-dark"><li class="fab fa-google-plus"></li></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="text-dark"><li class="fab fa-linkedin-in"></li></a>
-                        </li>
+                    <li class="list-inline-item">
+                            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                    <a href="https://www.googleplus.com"><i class="fab fa-google-plus"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                            <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
- <script src="activities.js"> </script>
-       
+ <script src="activities.js"> </script>     
  <script type="text/javascript">
     $(".menu-toggle-btn").click(function(){
         $(this).toggleClass("fa-times");
