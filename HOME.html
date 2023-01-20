@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>HOPE CLINIC</title>
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -25,7 +25,7 @@
                 <a href="aboutus.html"><i class="fa-sharp fa-solid fa-list about"></i>About us</a>
                 <a href="activities.html"><i class="fa-sharp fa-solid fa-layer-group activities"></i>Activities</a>
                 <a href="ourteam.html"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Our Team</a>
-                <a href="Registration.html"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Contact Us</a>
+                <a href="Registration.html"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Register Now</a>
                 <a class="search-box">
                     <input class="search-txt" type="text" placeholder="search">
                     <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
@@ -57,9 +57,9 @@
                 <li>Research benefits for disability people</li>
                 <li>Transport</li>
             </ol>
-           <a href="aboutus.html">
+            <a href="aboutus.html">
                <button type="button" >Read more</button>
-           </a>
+            </a>
 
         </div>
 
@@ -166,7 +166,8 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>A clinic filled with care, love and everything else you need</p>
+                    <p>A clinic filled with care, love, support, happiness, joy, precision and everything
+                       else you need.</p>
                 </div>
             </div>
 
@@ -181,7 +182,8 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <p>Cleanliness, Doctors treatment/advice, are good. Overall good experience, the treatment was good and very helpful staff.</p>
+                    <p>Cleanliness, Doctors treatment/advice, are good. Overall good experience,
+                       the treatment was good and very helpful staff.</p>
                 </div>
             </div>
 
@@ -196,22 +198,49 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>I am fully satisfied with the services rendered to the patient. The hospital staf are very courteous and cooperative and helpful.</p>
+                    <p>I am fully satisfied with the services rendered to the patient. The hospital staf are very
+                       courteous and cooperative and helpful.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<!--------------Drag and Drop section------------------------->
+       
+        <section class="home-game">
+            <h2>Did you get tired scrolling&quest;</h2>
+            <button id="play-btn">Let's play a game</button>
+
+            <div class="game-content">
+                <p class="game-description">Find the word by dragging the letters and dropping them to their correct
+                    position.<br /> If you find the required word, its letters will turn white and box borders will turn
+                    green.</p>
+
+                <div class="game-letters" >
+                    <div class="box" draggable="true" style="background-color: #ff6384;" id="box-h"><span
+                            class="letter">P</span></div>
+                    <div class="box" draggable="true" style="background-color: #36a2eb;" id="box-i"><span
+                            class="letter">H</span></div>
+                    <div class="box" draggable="true" style="background-color: #ffce56;" id="box-c1"><span
+                            class="letter">E</span></div>
+                    <div class="box" draggable="true" style="background-color: #9966ff;" id="box-a"><span
+                            class="letter">O</span></div>
+                    
+
+                </div>
+            </div>
+        </section>
+
 <!--------------Rating------------------------------>
-<div class="Rating">
-<p >Rate this information from 1 - 10:</p>
+    <div class="Rating">
+        <p >Rate this information from 1 - 10:</p>
 
-<input id="demo" type="text" placeholder="Input your number">
-<button type="button" onclick="myFunction()" >Rate</button>
-<p id="p01"></p>
+        <input id="demo" type="text" placeholder="Input your number">
+        <button type="button" onclick="myFunction()" >Rate</button>
+        <p id="p01"></p>
 
-</div>
+    </div>
 
 
 
@@ -270,7 +299,7 @@
         </div>
     </footer>
 
-
+<!-----------------navigation-menu---------------------->
     <script type="text/javascript">
         $(".menu-toggle-btn").click(function(){
             $(this).toggleClass("fa-times");
@@ -278,24 +307,119 @@
         });
     </script>
 
-<!----------Rating error------------>
-<script>
-    function myFunction() {
-      const message = document.getElementById("p01");
-      message.innerHTML = "";
-      let x = document.getElementById("demo").value;
-      try {
-        if(x.trim() == "") throw "empty";
-        if(isNaN(x)) throw "not a number";
-        x = Number(x);
-        if(x < 1) throw " only from 1-10!";
-        if(x > 10) throw " only from 1-10!";
-      }
-      catch(err) {
-        message.innerHTML = "  Input is " + err;
-      }
-    }
+<!----------------------Rating error-------------------->
+    <script>
+        function myFunction() {
+          const message = document.getElementById("p01");
+          message.innerHTML = "";
+          let x = document.getElementById("demo").value;
+          try {
+            if(x.trim() == "") throw "empty";
+            if(isNaN(x)) throw "not a number";
+            x = Number(x);
+            if(x < 1) throw " only from 1-10!";
+            if(x > 10) throw " only from 1-10!";
+          }
+          catch(err) {
+            message.innerHTML = "  Input is " + err;
+          }
+        }
     </script>
+
+
+<!-------------------Drag and Drop section javascript------------------------->
+<script type="text/javascript">
+$(document).ready(function () {  // toggles the game
+  $(".game-content").hide();
+  var playCount = 0;
+  $("#play-btn").click(function () {
+      playCount++;
+      if (playCount % 2 != 0) {
+          $("#play-btn").html("Collapse");
+          $(".home-game h2").html("Find the word");
+      }
+      else {
+          $("#play-btn").html("Let's play a game");
+          $(".home-game h2").html("Did you get tired scrolling?");
+      }
+      $(".game-content").slideToggle(1000);
+  })
+})
+
+const boxElements = document.querySelectorAll(".box");
+
+// add event listeners
+boxElements.forEach(elem => {
+  elem.addEventListener("dragstart", dragStart);
+  elem.addEventListener("dragend", dragEnd);
+  elem.addEventListener("dragenter", dragEnter);
+  elem.addEventListener("dragover", dragOver);
+  elem.addEventListener("dragleave", dragLeave);
+  elem.addEventListener("drop", drop);
+
+  // Drag and Drop Functions
+
+  function dragStart(event) {
+      event.target.classList.add("drag-start");
+      event.dataTransfer.setData("text", event.target.id);
+  }
+
+  function dragEnd(event) {
+      event.target.classList.remove("drag-start");
+  }
+
+  function dragEnter(event) {
+        event.preventDefault();
+        event.target.classList.add("drag-over");
+  }
+
+  function dragOver(event) {
+      event.preventDefault();
+  }
+
+  function dragLeave(event) {
+      event.target.classList.remove("drag-enter");
+  }
+
+  var word = "";
+
+  function drop(event) {
+      event.preventDefault();
+      event.target.classList.remove("drag-enter");
+      const draggableElementId = event.dataTransfer.getData("text");
+      const droppableElementId = event.target.id;
+      if (draggableElementId !== droppableElementId) {
+          const draggableElement = document.getElementById(draggableElementId);
+          const droppableElementBgColor = event.target.style.backgroundColor;
+          const droppableElementTextContent = event.target.querySelector("span").textContent;
+
+          event.target.style.backgroundColor = draggableElement.style.backgroundColor;
+          event.target.querySelector("span").textContent = draggableElement.querySelector("span").textContent;
+          event.target.id = draggableElementId;
+          draggableElement.style.backgroundColor = droppableElementBgColor;
+          draggableElement.querySelector("span").textContent = droppableElementTextContent;
+          draggableElement.id = droppableElementId;
+
+          // get the word created by the user
+          $(".box > .letter").each(function () {
+              word += $(this).text();
+          })
+          console.log(word);
+
+          // check if the word is correct
+          if (word === "HOPE") {
+              $(".box").addClass("correct");
+              word = "";
+          }
+          else {
+              $(".box").removeClass("correct");
+              word = "";
+          }
+      }
+  }
+});
+
+</script>
 
 
 </body>

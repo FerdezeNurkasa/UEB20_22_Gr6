@@ -1,5 +1,4 @@
 *{
-    
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
@@ -40,7 +39,7 @@ header{
 
 .navigation-menu a{
     margin-right: 40px;
-    color: blue;
+    color: rgb(42, 42, 121);
     text-transform: uppercase;
     font-size:14px;
     padding: 10px 0px;
@@ -218,7 +217,7 @@ border-spacing: 90px;
     width: 50%;
     height: 50%;
     border: double #0783bc 5px;
-    background: linear-gradient(45deg, #6fdbe57f, #4cb0b9);
+    background: linear-gradient(45deg, #57b1d88f, #64a6d8);
 }
 
 .content {
@@ -298,12 +297,11 @@ border-spacing: 90px;
     margin-top: 55px;
     margin-bottom: 55px;
     padding: 4em;
-    color: white;
 }
 
 .about-section{
     background-size: 55%;
-    background-color: aliceblue;
+    background-color:  #d4e3f3;
     overflow: hidden;
     padding: 50px;
 }
@@ -312,7 +310,7 @@ border-spacing: 90px;
     
     width: 55%;
     float: right;
-    background-color: aliceblue;
+    background-color:  #d4e3f3;
     padding: 100px;
 }
 
@@ -325,7 +323,7 @@ border-spacing: 90px;
     text-align: center;
     margin-bottom: 40px;
     width: 90%;
-    background-color: aliceblue;
+    background-color:  #d4e3f3;
 }
 
 .image-container_a {
@@ -338,7 +336,7 @@ border-spacing: 90px;
 .image_a {
     width: 120px;
     height: 120px;
-    background:linear-gradient(45deg, #6fdbe57f, #4cb0b9) ;
+    background:linear-gradient(45deg, #57b1d88f, #64a6d8);
     margin: 2px 50px;
     border-radius: 50%;
     border: 3px solid ;
@@ -459,7 +457,7 @@ border-color: inherit;
 
 table th{
     width: 50%;
-    background:aliceblue;
+    background: #d4e3f3;
 }
 
 .benefits-table .benefits {
@@ -475,14 +473,14 @@ table th{
     border-collapse: collapse;
     border-radius: 10px 10px 50px 10px;
     transition: all .2s ease-in-out;
-    background:aliceblue;
+    background: #d4e3f3;
 }
 
 .benefits p {
     width: 93%;
     height: 85px;
     padding: 10px;
-    background: aliceblue;
+    background:  #d4e3f3;
 }
 
 .client-text {
@@ -508,12 +506,7 @@ table {
     border-spacing: 2px;
     border-color: grey;
     width:100%;
-    background: linear-gradient(45deg, #6fdbe57f, #4cb0b9);
-}
-
-tbody{
-    display: table-row-group;
-    vertical-align: middle;
+    background: linear-gradient(45deg, #57b1d88f, #64a6d8);
 }
 
 .ta2 tr td {
@@ -578,12 +571,13 @@ footer{
     height: fit-content;
     display: inline-block;
     margin: 1% 2%;
-    padding: 5px;
-    color: rgb(30, 128, 147);
+    padding: 10px;
+    color: rgb(54, 154, 174);
+   align-items: center;
 }
 
 .box4 p {
-    background: aliceblue;
+    background:  #d4e3f3;
 }
 .box41, .box42, .box43 {
     width: 340px;
@@ -593,7 +587,7 @@ footer{
     text-align: center;
     border-radius: 10px;
     float: left;
-    background: aliceblue;
+    background:  #d4e3f3;
     box-shadow:#38a8bc ;
 }
 
@@ -657,3 +651,4 @@ h3 {
     height: 40px;
     color: white;
 }
+

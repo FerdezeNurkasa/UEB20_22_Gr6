@@ -24,8 +24,8 @@
                 <a href="HOME.html"><i class="fa-sharp fa-solid fa-house home"></i>Home</a>
                 <a href="aboutus.html"><i class="fa-sharp fa-solid fa-list about"></i>About us</a>
                 <a href="activities.html"><i class="fa-sharp fa-solid fa-layer-group activities"></i>Activities</a>
-                <a href="Registration.html"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Contact Us</a>
                 <a href="ourteam.html"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Our Team</a>
+                <a href="Registration.html"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Register Now</a>
                 <a class="search-box">
                     <input class="search-txt" type="text" placeholder="search">
                     <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
@@ -68,18 +68,6 @@
         </div>
     </ul>
 </div>
- <h7>Drag our logo into rectangle</h7>
- <div id="getData"
-        ondrop="drop(event)"
-        ondragover="allowDrop(event)">
-     </div>
-   <br>
-   <img id="dragData"
-        src="C:\Users\User\Documents\GitHub\UEB20_22_Gr7\images\Logo.png"
-        draggable="true"
-        ondragstart="drag(event)"
-        width="250"
-        height="200">
 
  <table>
             <tr>
@@ -113,9 +101,7 @@
         <h6>Show some photos...</h6>
 
         <div class="maindiv"></div>
-        
-  
-
+       
   <div class="container3">
         <div class="popup-container">
         <h2>Any comment about activities of our team?</h2>
@@ -192,12 +178,6 @@
     $(".menu-toggle-btn").click(function(){
         $(this).toggleClass("fa-times");
         $(".navigation-menu").toggleClass("active");
-    });
-</script>
-<script>
-    const dragArea= document.querySelector(".wrapper");
-    new Sortable(dragArea , {
-Animation : 350
     });
 </script>
 </body>
