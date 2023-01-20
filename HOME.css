@@ -15,12 +15,14 @@ header{
     background: #d4e3f3;
     position: static;
     z-index: 99;
+    position: fixed;
 }
 
 .navigation{
     max-width: 100%;
     padding-right: 20px;
     margin:0;
+    
 }
 
 .logo{
