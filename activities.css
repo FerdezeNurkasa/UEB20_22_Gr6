@@ -3,7 +3,6 @@
     padding:0;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
-    overflow-x: hidden;
 }
 
 header{
@@ -168,7 +167,7 @@ body{
     "https://i.pinimg.com/originals/63/65/fb/6365fb5823ca5602292b3d79a9202f11.jpg");
     background-repeat:no-repeat;
     background-position-x: center;
-
+    overflow-x: hidden;
 }
 
 .bg-image{

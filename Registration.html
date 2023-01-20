@@ -87,7 +87,7 @@
                         <label for = "nrtel" > Telephone: </label>
                         </div>
                         <div class="col-10">
-                           <input type = "tel" name = "nrtel" id="nrtel" autocomplete="on" required>
+                           <input type = "tel" name = "nrtel" id="nrtel" autocomplete="on" placeholder="044-xxx-xxx" pattern="[0-6]{3}-[0-9]{3}-[0-9]{3}" required>
                         </div>
                      </div>
                      <div class = "row mb-2">
@@ -103,7 +103,7 @@
                            <label for = "datepicker"> Birthdate: </label>
                         </div>
                         <div class="col-10">
-                           <input type="date" class="datepicker" data-date-format="mm/dd/yyyy" id="date" autocomplete="on" required>
+                           <input type="date" class="datepicker" id="date" autocomplete="on" required>
                         </div>
                      </div>
                      <div class="row mb-2">
@@ -119,7 +119,8 @@
                      </div>
                      <div class="row">
                         <div class="col" style="display: flex; justify-content: center;">
-                           <button type="submit" class = "nextbutton btn btn-md btn-primary"><a href = "Rpage2.html" style="color:white;font-weight: bolder;">  Next  </a></button>  
+                           <h6 id="demo" style="display: inline; margin-bottom: 5%; color:red;"></h6><br>
+                           <button type="submit" class = "nextbutton btn btn-md btn-primary" onclick="myStopFunction()"><a href = "Rpage2.html" style="color:white;font-weight: bolder;">  Next  </a></button>  
                         </div>
                      </div>
                   </form>
@@ -296,6 +297,14 @@
              $(".navigation-menu").toggleClass("active");
          });
 
+
+         const myTimeout = setTimeout(myGreeting, 100000);
+         function myGreeting() {
+            document.getElementById("demo").innerHTML = "Please try again and finish it quicker!"
+         }
+         function myStopFunction() {
+            clearTimeout(myTimeout);
+         }
        
       </script>
    </body>

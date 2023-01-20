@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open Registration.html",
-            "file": "c:\\Users\\Asus\\Desktop\\Projekti Web1\\UEB20_22_Gr7\\Registration.html"
+            "name": "Open activities.html",
+            "file": "c:\\Users\\Asus\\Desktop\\Projekti Web1\\UEB20_22_Gr7\\activities.html"
         }
     ]
 }
