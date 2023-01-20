@@ -43,7 +43,7 @@ header{
 
 .navigation-menu a:hover{
     background: #fff;
-    color: lightgray;
+    color: blue;
     transform: scale(0.8);
 }
 
@@ -56,106 +56,6 @@ header{
     color:#92ef84;
 
 }
-
-.about{
-    color:#92ef84;
-
-}
-
-.activities{
-    color:#92ef84;
-
-}
-
-.contact{
-    color:#92ef84;
-
-}
-
-
-.menu-toggle-btn{
-    float: right;
-    height: 90px;
-    line-height: 90px !important;
-    color: #fff;
-    font-size: 26px;
-    display: none !important;
-    cursor: pointer;
-    
-}
-
-@media screen and (max-width:1100px) {
-    .menu-toggle-btn{
-        display:block !important;
-    }
-
-    .navigation-menu{
-        position:fixed;
-        width: 100%;
-        max-width: 400px;
-        background: rgb(100, 198, 231);
-        top:90px;
-        right: 0;
-        display: none;
-        padding: 20px 40px;
-        box-sizing: border-box;
-        z-index: 1;
-    }
-
-    .navigation-menu::before{
-        content: "";
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 10px solid black;
-        position: absolute;
-        top: -10px;
-        right: 10px;
-
-    }
-
-    .navigation-menu a{
-        display: block;
-        margin: 10px 0;
-    }
-
-    .navigation-menu.active{
-        display: block;
-        position: fixed;
-    }
-
-}
-
-.search-box{
-    position: relative;
-    top: 5px;
-    left: 2rem;
-    right: 2rem;
-    background:none;
-    height: 40px;
-    border-radius: 40px;
-    padding: 10px;
-
-}
-.search-box:hover > .search-txt{
-    width: 4rem;
-    padding: 0 6px;
-    top: 50px;
-}
-.search-box:hover > .search-btn{
-   color: white;
-     }
-
-.search-txt{
- border: none;
- background: none;
- outline: none;
- float: left;
- padding: 0;
- color: rgb(66, 61, 139);
- font-size: 16px;   
- width: 0px;
-}
-  
  
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
   @media screen and (max-width: 500px) {
