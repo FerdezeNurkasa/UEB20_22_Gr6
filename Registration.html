@@ -119,7 +119,7 @@
                      </div>
                      <div class="row">
                         <div class="col" style="display: flex; justify-content: center;">
-                           <h6 id="demo" style="display: inline; margin-bottom: 5%; color:red;"></h6><br>
+                           <h6 id="reminder" style="display: inline; margin-bottom: 5%; color:red;"></h6><br>
                            <button type="submit" class = "nextbutton btn btn-md btn-primary" onclick="myStopFunction()"><a href = "Rpage2.html" style="color:white;font-weight: bolder;">  Next  </a></button>  
                         </div>
                      </div>
@@ -300,11 +300,12 @@
 
          const myTimeout = setTimeout(myGreeting, 100000);
          function myGreeting() {
-            document.getElementById("demo").innerHTML = "Please try again and finish it quicker!"
+            document.getElementById("reminder").innerHTML = "Please try again and finish it quicker!"
          }
          function myStopFunction() {
             clearTimeout(myTimeout);
          }
+
        
       </script>
 
