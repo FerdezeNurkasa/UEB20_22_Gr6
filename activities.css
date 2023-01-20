@@ -435,7 +435,8 @@ h6{
     background-image: 
 url("https://media.istockphoto.com/id/984878838/photo/a-boy-in-wheelchair-with-teenager-friends-outside-playing-basketball.jpg?s=612x612&w=0&k=20&c=aL2zbVQVFXk6c5gBaEfGBROJUY5Qs_YUop57DMhCbRk=");
    background-size: 100% 100%;
-   box-shadow: 1px 2px 10px 10px white;
+   box-shadow: 1px 2px 10px 10px rgb(211, 205, 205);
+   border-radius: 20px;
    animation: slider 10s infinite linear;
 }
 
