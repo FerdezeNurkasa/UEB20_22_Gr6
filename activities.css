@@ -196,7 +196,7 @@ nav ul li a{
 
 .color-container2{
     background-color: #dfedfb;
-    width: 200px;
+    width: 230px;
     height: 150px;
     color-scheme: white;
     margin: 0.5% 1.5%;
@@ -214,7 +214,7 @@ nav ul li a{
     
 }
 
-/*For the pages in ul listtt*/
+/*For the pages in ul list*/
 img{
     width:18cm;
     height: 10cm;
@@ -235,7 +235,7 @@ table{
     border-radius: 20px;
     font-size: 1cm;
     color: lightseagreen;
-    width: 20cm;
+    width: 15cm;
     height: 5cm;
     margin-left: auto;
     margin-right: auto;
