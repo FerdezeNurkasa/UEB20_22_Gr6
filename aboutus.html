@@ -28,9 +28,7 @@
                         <input class="search-txt" type="text" placeholder="search">
                         <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                     </a>
-                    
                 </nav>
-    
             </div>
         </header>
 
@@ -121,20 +119,7 @@
         <p class="about_a" id="about_a">Presheve</p>
     </div>
 </div>
-<script>
-    function fetch_info(i){
-            let profiles_a=["images/qika1.jpg","images/djali1.jpg","images/qika1.jpg","images/djali1.jpg","images/djali1.jpg","images/qika1.jpg"];
-            let name_a=['Isabela Kaling','Mason Wyatt','Emma Roberts','Greyson Parker','Nolan Hudson','Sasha Pieterse'];
-            let status_a=["Founder ","Founder ","Founder ","Founder ","Founder ","Founder "];
-            let about_a=["Prishtin&euml;/Kosov&euml;","Gjilan/Kosov&euml;","Prishtin&euml;/Kosov&euml;","Gjakov&euml;/Kosov&euml;","Preshev&euml;","Vushtrri/Kosov&euml;"];
-            
-            document.getElementById("profile_a").src=profiles_a[i];
-            document.getElementById("name_a").innerHTML=name_a[i];
-            document.getElementById("status_a").innerHTML=status_a[i];
-            document.getElementById("about_a").innerHTML=about_a[i];
-        }
-</script>
-   
+
 <!--Benefits-->
 <section class="benefits-section">
     <div class="benefits-div">
@@ -206,7 +191,7 @@
     
     <!--Pricing plans-->
     <div class="box4">
-        <h2 align="center" display="block" bold>Pricing Plans</h2>
+        <h2 align="center" display="block" style="text-shadow: 2px 4px 4px rgb(54, 154, 174);">Pricing Plans</h2>
         <p class="star-img"></p>
         <div class="box41">
             <h4>Free</h4>
@@ -224,26 +209,24 @@
             <p>With this price we offer food, transportation and all of our actitivites!</p>
         </div>
     </div>
-<h4 style="text-align: center;"><i>To know more about our actitivites we offer with prices <a href=activities.html target="_blank">click here.</a></i></h4>
+<h4 style="text-align: center;"><i>To know more about our actitivites we offer with prices <a href=activities.html target="_blank" style="text-shadow: 2px 4px 4px rgb(54, 154, 174);">click here.</a></i></h4>
 
     <!--Transportimi-->
-    
             <div class="transport_main">
                 <video src="transportation.mp4" style="width:400px;height:200px;align-items: left;" controls ></video>
             <mark style="background-color:  #d4e3f3;">
-                <br>TRANSPORTATION OF OUR CLIENTS
+             <br>TRANSPORTATION OF OUR CLIENTS
                     <br>
     We transport our clients in every place they want to go. Our first bus is in 08:00 AM, bus goes in every station where our clients are waiting. When we have activities in other place we transport our clients to make happy them. When the rehabilitation schedule ends we send our clients at their nearest station.
   </mark>
             </div>
         </div>
-   
 
     <!--Audio-->
-    <div class="center-div">
+    <article class="center-div">
         <audio src="12-article-7-children-w.mp3" controls></audio>
-    </div>
-    
+    </article>
+
     <!--Forma-->
 <div class="col-md-6">
     <h3 class="text-left">Leave a Comment</h3>
@@ -293,8 +276,6 @@
 </div>
 <a href="#"><div class="btn btn-info">Submit</div></a>
 <a href="#"><div class="btn btn-warning">Cancel</div></a>
-
-
 
 <!--Footer-->
     <footer class="text-dark pt-2 pb-1">
@@ -346,5 +327,21 @@
             </div>
         </div>
     </footer>
+
+    <!--Script for founders-->
+    <script>
+        function fetch_info(i){
+                let profiles_a=["images/qika1.jpg","images/djali1.jpg","images/qika1.jpg","images/djali1.jpg","images/djali1.jpg","images/qika1.jpg"];
+                let name_a=['Isabela Kaling','Mason Wyatt','Emma Roberts','Greyson Parker','Nolan Hudson','Sasha Pieterse'];
+                let status_a=["Founder ","Founder ","Founder ","Founder ","Founder ","Founder "];
+                let about_a=["Prishtin&euml;/Kosov&euml;","Gjilan/Kosov&euml;","Prishtin&euml;/Kosov&euml;","Gjakov&euml;/Kosov&euml;","Preshev&euml;","Vushtrri/Kosov&euml;"];
+                
+                document.getElementById("profile_a").src=profiles_a[i];
+                document.getElementById("name_a").innerHTML=name_a[i];
+                document.getElementById("status_a").innerHTML=status_a[i];
+                document.getElementById("about_a").innerHTML=about_a[i];
+            }
+    </script>
+   
         </body>
     </html>
