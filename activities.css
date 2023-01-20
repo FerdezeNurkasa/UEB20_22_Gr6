@@ -255,7 +255,7 @@ nav ul li a{
     display: flex;
     font-size: 25px;
     font-family: cursive;
-    margin-top: 10%;
+    margin-top: 20px;
     box-sizing: border-box;
     border: solid 2px darkgray;
     border-radius: 20px;
@@ -279,7 +279,7 @@ img{
 
 /*Table*/
 table{
-    margin-top: 0.5%;
+    margin-top: 2%;
     text-align: center;
     border-radius: 20px;
     font-size: 1cm;
@@ -290,6 +290,8 @@ table{
     margin-right: auto;
     border-color: #5699e0;
     background-color: #dfedfb;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3)
 }
 
 /*The text that tells to watch video below*/
