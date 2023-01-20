@@ -194,7 +194,7 @@ header{
     flex:1;
     max-width:320px;
     background-color: #fff;
-    margin:20px 10px;
+    margin:20px 10px 0 10px;
     margin-left:4.5rem;
     text-align: center;
     cursor: pointer;
