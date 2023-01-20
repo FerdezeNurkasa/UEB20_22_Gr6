@@ -17,6 +17,7 @@
     <header>
         <div class="navigation">
             <a href="HOME.html" class="logo"><img src="images/Logo.png" alt="Logo"></a>
+            <i class="menu-toggle-btn fas fa-bars"></i>
             <nav class="navigation-menu">
                 <a href="HOME.html"><i class="fa-sharp fa-solid fa-house home"></i>Home</a>
                 <a href="aboutus.html"><i class="fa-sharp fa-solid fa-list home"></i>About us</a>
@@ -192,7 +193,15 @@
             </div>
         </div>
     </footer>
- <script src="activities.js"> </script>     
+ <script src="activities.js"> </script>  
+ 
+ <!-----------------navigation-menu---------------------->
+<script type="text/javascript">
+    $(".menu-toggle-btn").click(function(){
+        $(this).toggleClass("fa-times");
+        $(".navigation-menu").toggleClass("active");
+    });
+</script>   
 
 </body>
 </html>

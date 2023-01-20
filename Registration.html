@@ -305,5 +305,13 @@
    document.getElementById("demo").innerHTML = text.replace("home", "favorite place");
    </script>
 
+<!-----------------navigation-menu---------------------->
+<script type="text/javascript">
+   $(".menu-toggle-btn").click(function(){
+       $(this).toggleClass("fa-times");
+       $(".navigation-menu").toggleClass("active");
+   });
+</script>
+
    </body>
 </html>
