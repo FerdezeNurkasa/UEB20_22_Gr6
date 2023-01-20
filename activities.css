@@ -167,13 +167,9 @@ body{
     "https://i.pinimg.com/originals/63/65/fb/6365fb5823ca5602292b3d79a9202f11.jpg");
     background-repeat:no-repeat;
     background-position-x: center;
-<<<<<<< HEAD
-    overflow-x: hidden;
-=======
     background-color: rgb(242, 247, 252);
     overflow-x: hidden;
 
->>>>>>> f9381fec17986bc450a20b7b8e76473f9d6aa5c2
 }
 
 .bg-image{
@@ -439,7 +435,8 @@ h6{
     background-image: 
 url("https://media.istockphoto.com/id/984878838/photo/a-boy-in-wheelchair-with-teenager-friends-outside-playing-basketball.jpg?s=612x612&w=0&k=20&c=aL2zbVQVFXk6c5gBaEfGBROJUY5Qs_YUop57DMhCbRk=");
    background-size: 100% 100%;
-   box-shadow: 1px 2px 10px 10px white;
+   box-shadow: 1px 2px 10px 10px rgb(211, 205, 205);
+   border-radius: 20px;
    animation: slider 10s infinite linear;
 }
 
