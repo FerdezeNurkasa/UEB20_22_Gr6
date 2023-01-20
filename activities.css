@@ -295,6 +295,7 @@ table{
     text-align: center;
     border-radius: 20px;
     font-size: 1cm;
+    color: slateblue;
     width: 20cm;
     height: 5cm;
     margin-left: auto;
@@ -497,4 +498,9 @@ img{
     height: 10cm;
    float: left;
    margin-top: 5px;
+}
+
+.center-div {
+    margin-top: -10%;
+    text-align: center;
 }

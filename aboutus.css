@@ -314,8 +314,6 @@ border-spacing: 90px;
     padding: 100px;
 }
 
-
-
 .text{
     font-size: 20px;
     color: #0b9aba;
@@ -591,23 +589,16 @@ footer{
     box-shadow:#38a8bc ;
 }
 
+
 .center-div {
     margin-top: -5%;
     text-align: center;
 }
 
-.transport_container {
-    width: 100%;
-    margin: 0 auto;
-    font-size: 24px;
-    height: 500px;
-    background: none;
-}
 
-.transport_container
+
 .transport_main {
     width: 100%;
-    background: url(images/transporti.png) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 350px;
@@ -651,4 +642,6 @@ h3 {
     height: 40px;
     color: white;
 }
+
+
 
