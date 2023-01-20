@@ -80,6 +80,7 @@ header{
         display: none;
         padding: 20px 40px;
         box-sizing: border-box;
+        z-index: 99;
     }
     .navigation-menu::before{
         content: "";

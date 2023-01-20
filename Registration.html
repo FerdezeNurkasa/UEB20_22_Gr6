@@ -127,8 +127,11 @@
          
       
          <div class="container">
-            <h4 class="ratingtext"> Here are some thoughts of our clients for us, if you want to be one of them and feel positive and supported you should continue below to provide your initial information for registration</h4>
-            <p> The names of our clients are not presented here due to their privacy </p>
+            <div class="alert alert-primary alert-dismissible fade show" role="alert" id="AlertShow">
+               Here are some thoughts of our clients for us, if you want to be one of them and feel positive and supported you should continue below to provide your initial information for registration
+               The names of our clients are not presented here due to their privacy
+               <button type="button" class="btn-close" onclick="onClose()" data-dismiss="alert" aria-label="Close"></button>
+             </div>
             <table class="stilitabeles">
                <tr>
                   <th> Clients </th>
@@ -290,7 +293,16 @@
          </div>
       </footer>
       <script type="text/javascript">
-         
+         $(".menu-toggle-btn").click(function(){
+             $(this).toggleClass("fa-times");
+             $(".navigation-menu").toggleClass("active");
+         });
+         function onClose(){
+               $('#AlertShow').hide("slow", function(){
+                  alert("Alert has been closed!");
+               });
+         }
+
          const myTimeout = setTimeout(myGreeting, 100000);
          function myGreeting() {
             document.getElementById("reminder").innerHTML = "Please try again and finish it quicker!"
