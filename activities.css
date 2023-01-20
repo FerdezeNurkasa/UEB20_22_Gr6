@@ -167,9 +167,13 @@ body{
     "https://i.pinimg.com/originals/63/65/fb/6365fb5823ca5602292b3d79a9202f11.jpg");
     background-repeat:no-repeat;
     background-position-x: center;
+<<<<<<< HEAD
+    overflow-x: hidden;
+=======
     background-color: rgb(242, 247, 252);
     overflow-x: hidden;
 
+>>>>>>> f9381fec17986bc450a20b7b8e76473f9d6aa5c2
 }
 
 .bg-image{
