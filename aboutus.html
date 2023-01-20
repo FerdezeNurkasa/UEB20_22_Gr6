@@ -17,19 +17,18 @@
         <!--Navigation-->
         <header>
             <div class="navigation">
-                <a href="#" class="logo"><img src="images/Logo.png" alt="Logo"></a>
+                <a href="HOME.html" class="logo"><img src="images/Logo.png" alt="Logo"></a>
                 <i class="menu-toggle-btn fas fa-bars"></i>
                 <nav class="navigation-menu">
                     <a href="HOME.html"><i class="fa-sharp fa-solid fa-house home"></i>Home</a>
-                    <a href="aboutus.html"><i class="fa-sharp fa-solid fa-list about"></i>About us</a>
-                    <a href="activities.html"><i class="fa-sharp fa-solid fa-layer-group activities"></i>Activities</a>
-                    <a href="ourteam.html"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Our Team</a>
-                    <a href="Registration.html"><i class="fa-sharp fa-solid fa-headphones-simple contact"></i>Register Now</a>
-                    <a class="search-box">
-                        <input class="search-txt" type="text" placeholder="search">
-                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-                    </a>
+                    <a href="aboutus.html"><i class="fa-sharp fa-solid fa-list home"></i>About us</a>
+                    <a href="activities.html"><i class="fa-sharp fa-solid fa-layer-group home"></i>Activities</a>
+                    <a href="ourteam.html"><i class="fa-sharp fa-solid fa-headphones-simple home"></i>Our Team</a>
+                    <a href="Registration.html"><i class="fa-sharp fa-solid fa-book home"></i>Register Now</a>
+                    
+                    
                 </nav>
+        
             </div>
         </header>
 
@@ -80,6 +79,7 @@
                 <h1 style="color: #09baba; background-color:  #d4e3f3;text-align: center;text-shadow: 2px 4px 4px rgb(54, 154, 174);">About Us</h1>
                 <p class="text">
                     "Launched in 2011, unique strategy has established it as the source of inspiration and influence throughout society. Our curatorial expertise and award-winning approach to storytelling is unparalleled. We work with exceptional talent and well-known and developing doctors, psychologists, speech therapists. In the following years, we have worked on a wide range of unique projects with some of the best Albanian psychologists. We strive to keep our work unique and clever." 
+
                 <br>
                 "Feel free to contact us anytime"
                 </p>
@@ -343,6 +343,14 @@
                 document.getElementById("about_a").innerHTML=about_a[i];
             }
     </script>
+
+    <!-----------------navigation-menu---------------------->
+<script type="text/javascript">
+    $(".menu-toggle-btn").click(function(){
+        $(this).toggleClass("fa-times");
+        $(".navigation-menu").toggleClass("active");
+    });
+</script>
    
         </body>
     </html>

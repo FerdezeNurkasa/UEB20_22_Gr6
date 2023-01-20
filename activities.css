@@ -42,7 +42,7 @@ header{
 
 .navigation-menu a{
     margin-right: 40px;
-    color: blue;
+    color: black;
     text-transform: uppercase;
     font-size:14px;
     padding: 10px 0px;
@@ -66,21 +66,6 @@ header{
 
 }
 
-.about{
-    color:#92ef84;
-
-}
-
-.activities{
-    color:#92ef84;
-
-}
-
-.contact{
-    color:#92ef84;
-
-}
-
 .menu-toggle-btn{
     float: right;
     height: 90px;
@@ -91,42 +76,10 @@ header{
     cursor: pointer;
 }
 
-.search-box{
-    position: relative;
-    top: 0.5%;
-    left: 2rem;
-    right: 2rem;
-    background:none;
-    height: 40px;
-    border-radius: 40px;
-    padding: 1%;
-
-}
-.search-box:hover > .search-txt{
-    width: 4rem;
-    padding: 0 0.6%;
-    top: 5%;
-}
-.search-box:hover > .search-btn{
-   color: white;
-     }
-
-.search-txt{
- border: none;
- background: none;
- outline: none;
- float: left;
- padding: 0;
- color: rgb(66, 61, 139);
- font-size: 16px;   
- width: 0px;
-}
- 
 @media screen and (max-width:760px) {
     .menu-toggle-btn{
         display: block !important;
     }
-
     .navigation-menu{
         position:fixed;
         width: 100%;
@@ -135,31 +88,26 @@ header{
         top:90px;
         right: 0;
         display: none;
-        padding: 2% 4%;
+        padding: 20px 40px;
         box-sizing: border-box;
     }
-
     .navigation-menu::before{
         content: "";
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
         border-bottom: 10px solid red;
         position: absolute;
-        top: -1%;
-        right: 1%;
-
+        top: -10px;
+        right: 10px;
     }
-
     .navigation-menu a{
         display: block;
-        margin: 1% 0;
+        margin: 10px 0;
     }
-
     .navigation-menu.active{
         display: block;
         position: fixed;
     }
-
 }
 
 body{
@@ -167,13 +115,9 @@ body{
     "https://i.pinimg.com/originals/63/65/fb/6365fb5823ca5602292b3d79a9202f11.jpg");
     background-repeat:no-repeat;
     background-position-x: center;
-<<<<<<< HEAD
-    overflow-x: hidden;
-=======
     background-color: rgb(242, 247, 252);
     overflow-x: hidden;
 
->>>>>>> f9381fec17986bc450a20b7b8e76473f9d6aa5c2
 }
 
 .bg-image{
@@ -439,7 +383,8 @@ h6{
     background-image: 
 url("https://media.istockphoto.com/id/984878838/photo/a-boy-in-wheelchair-with-teenager-friends-outside-playing-basketball.jpg?s=612x612&w=0&k=20&c=aL2zbVQVFXk6c5gBaEfGBROJUY5Qs_YUop57DMhCbRk=");
    background-size: 100% 100%;
-   box-shadow: 1px 2px 10px 10px white;
+   box-shadow: 1px 2px 10px 10px rgb(211, 205, 205);
+   border-radius: 20px;
    animation: slider 10s infinite linear;
 }
 
