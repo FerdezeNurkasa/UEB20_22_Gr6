@@ -243,12 +243,8 @@ nav ul li a{
     justify-content: center;
     
 }
-img{
-    width:18cm;
-    height: 10cm;
-   float: left;
-   margin-top: 5px;
-}
+
+
 .color-container2{
     background-color: #dfedfb;
     width: 230px;
@@ -265,6 +261,20 @@ img{
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,.3);
     text-align:center;
+}
+
+/*For the pages in ul list*/
+img{
+    width:18cm;
+    height: 10cm;
+   float: left;
+   margin-top: 5px;
+}
+.container4{
+    margin: 50px auto;
+    width: 50%;
+    padding: 8px;
+    font-size: 0.5cm;
 }
 
 /*Table*/
