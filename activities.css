@@ -3,6 +3,7 @@
     padding:0;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
 }
 
 header{
@@ -211,7 +212,7 @@ h2{
     padding-top: 5%;
     margin-left: 20%;
 }
-.divider{
+/*.divider{
     width: 44cm;
     height: 5px;
     background-color: #5699e0;
@@ -221,9 +222,13 @@ h2{
     position:relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%)
- 
-   
+    transform: translate(-50% , -50%) 
+ } */
+.divider{
+    padding: 2%;
+    text-align: center;
+    background-color: #5699e0;
+
 }
 nav ul li{
     display:block;
@@ -295,6 +300,7 @@ table{
     text-align: center;
     border-radius: 20px;
     font-size: 1cm;
+    color: #5699e0;
     width: 20cm;
     height: 5cm;
     margin-left: auto;
