@@ -168,6 +168,7 @@ body{
     background-repeat:no-repeat;
     background-position-x: center;
     background-color: rgb(242, 247, 252);
+    overflow-x: hidden;
 
 }
 
