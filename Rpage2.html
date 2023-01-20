@@ -283,24 +283,20 @@
         <div class="row d-flex justify-content-center">
           <div class="text-center">
             <ul class="list-unstyled list-inline">
-              <li class="list-inline-item">
-                <a href="#" class="text-dark">
-              <li class="fab fa-facebook"></li></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="text-dark">
-              <li class="fab fa-twitter"></li></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="text-dark">
-              <li class="fab fa-google-plus"></li></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="text-dark">
-              <li class="fab fa-linkedin-in"></li></a>
-              </li>
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+            <a href="https://www.googleplus.com"><i class="fab fa-google-plus"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                </li>
             </ul>
-          </div>
+        </div>
         </div>
       </div>
   </footer>
@@ -310,23 +306,26 @@
       $(this).toggleClass("fa-times");
       $(".navigation-menu").toggleClass("active");
     });
-
-
+</script>
+<script>
     function myFunction() {
       alert("Congrats "+{
         getFullName(){ 
           return [firstname, lastname].join(" ");
         }
       }
-      + "you are registered now!");
+      + " you are registered now!");
     }
 
-    const persons = {
-      firstname : "Ajshe"
-    , lastname: "Selmani"};
+    const persons = [
+      {firstName : "Ajshe",
+      lastName: "Selmani"}
+    ];
     document.getElementById("funksioni").innerHTML = persons.map(getFullName);
+    
+    
     function getFullName() {
-      return [firstname, lastname].join(" ");
+     return [firstname,lastname].join(" ");
     }
 
   </script>
