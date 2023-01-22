@@ -46,7 +46,7 @@ btn.onclick = function(){
     btn.classList.add('active')
     clip.classList.add('active')
     video.play();
-    alert('test')
+    alert('Are you preparing to watch this video?')
 }
 close.onclick = function(){
     btn.classList.remove('active')
