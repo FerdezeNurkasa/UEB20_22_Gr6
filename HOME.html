@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="HOME.css">
-    <script src="HOME.js"></script>
+    
 </head>
 
 <body>
@@ -317,102 +317,6 @@
         }
     </script>
 
-
-<!-------------------Drag and Drop section javascript------------------------->
-<script type="text/javascript">
-$(document).ready(function () {  // toggles the game
-  $(".game-content").hide();
-  var playCount = 0;
-  $("#play-btn").click(function () {
-      playCount++;
-      if (playCount % 2 != 0) {
-          $("#play-btn").html("Collapse");
-          $(".home-game h2").html("Find the word");
-      }
-      else {
-          $("#play-btn").html("Let's play a game");
-          $(".home-game h2").html("Did you get tired scrolling?");
-      }
-      $(".game-content").slideToggle(1000);
-  })
-})
-
-const boxElements = document.querySelectorAll(".box");
-
-// add event listeners
-boxElements.forEach(elem => {
-  elem.addEventListener("dragstart", dragStart);
-  elem.addEventListener("dragend", dragEnd);
-  elem.addEventListener("dragenter", dragEnter);
-  elem.addEventListener("dragover", dragOver);
-  elem.addEventListener("dragleave", dragLeave);
-  elem.addEventListener("drop", drop);
-
-  // Drag and Drop Functions
-
-  function dragStart(event) {
-      event.target.classList.add("drag-start");
-      event.dataTransfer.setData("text", event.target.id);
-  }
-
-  function dragEnd(event) {
-      event.target.classList.remove("drag-start");
-  }
-
-  function dragEnter(event) {
-        event.preventDefault();
-        event.target.classList.add("drag-over");
-  }
-
-  function dragOver(event) {
-      event.preventDefault();
-  }
-
-  function dragLeave(event) {
-      event.target.classList.remove("drag-enter");
-  }
-
-  var word = "";
-
-  function drop(event) {
-      event.preventDefault();
-      event.target.classList.remove("drag-enter");
-      const draggableElementId = event.dataTransfer.getData("text");
-      const droppableElementId = event.target.id;
-      if (draggableElementId !== droppableElementId) {
-          const draggableElement = document.getElementById(draggableElementId);
-          const droppableElementBgColor = event.target.style.backgroundColor;
-          const droppableElementTextContent = event.target.querySelector("span").textContent;
-
-          event.target.style.backgroundColor = draggableElement.style.backgroundColor;
-          event.target.querySelector("span").textContent = draggableElement.querySelector("span").textContent;
-          event.target.id = draggableElementId;
-          draggableElement.style.backgroundColor = droppableElementBgColor;
-          draggableElement.querySelector("span").textContent = droppableElementTextContent;
-          draggableElement.id = droppableElementId;
-
-          // get the word created by the user
-          $(".box > .letter").each(function () {
-              word += $(this).text();
-          })
-          console.log(word);
-
-          // check if the word is correct
-          if (word === "HOPE") {
-              $(".box").addClass("correct");
-              word = "";
-          }
-          else {
-              $(".box").removeClass("correct");
-              word = "";
-          }
-      }
-  }
-});
-
-
-</script>
-
 <!-----------------navigation-menu---------------------->
 <script type="text/javascript">
     $(".menu-toggle-btn").click(function(){
@@ -420,6 +324,6 @@ boxElements.forEach(elem => {
         $(".navigation-menu").toggleClass("active");
     });
 </script>
-
+<script src="HOME.js"></script>
 </body>
 </html>
